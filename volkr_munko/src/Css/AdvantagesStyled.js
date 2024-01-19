@@ -29,7 +29,7 @@ export const AdvantageLeftInner = styled.div``;
 export const AdvantageRightInner = styled.div`
   margin: 0 0 0 60px;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     margin: 30px 0 0 50px;
   }
 `;
@@ -78,7 +78,7 @@ export const AdvantageHeading = styled.div`
     background: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     font-size: 24px;
     line-height: 30px;
     margin: 0 0 20px 0;
@@ -99,7 +99,7 @@ export const AdvantagesDecription = styled.div`
   max-width: 565px;
   width: 100%;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     font-size: 12px;
     line-height: 22px;
   }
@@ -133,7 +133,7 @@ export const LiNumber = styled.div`
   letter-spacing: -0.18px;
   color: #fff;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     font-size: 12px;
     width: 14px;
     height: 14px;
@@ -149,7 +149,7 @@ export const LiContent = styled.div`
   letter-spacing: -0.18px;
   color: #37415c;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     font-size: 14px;
     line-height: 24px;
   }

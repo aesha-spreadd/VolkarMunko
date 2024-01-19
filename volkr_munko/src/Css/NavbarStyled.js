@@ -26,7 +26,7 @@ export const NavbarLeft = styled.div``;
 export const LeftLogo = styled.div`
   margin: 0 36px;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     margin: 0;
 
     img {
@@ -50,7 +50,7 @@ export const UlMenuMobileHide = styled.div`
   display: flex;
   align-items: center;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     display: none;
   }
 `;
@@ -92,8 +92,9 @@ export const MobileOpen = styled.div`
   margin: 0 30px 0 0;
   display: none;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     display: block;
+
     svg {
       width: 30px;
       height: 30px;

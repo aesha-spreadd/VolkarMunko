@@ -22,7 +22,7 @@ export const WealthManagementSection = styled.div`
     background-position: center top;
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     height: auto;
 
     &::before {
@@ -47,7 +47,7 @@ export const WealthManagementInnerPart = styled.div`
   justify-content: space-between;
   align-items: flex-start;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     flex-direction: column;
     align-items: flex-start;
     padding: 140px 0 70px;
@@ -58,7 +58,7 @@ export const LeftInner = styled.div`
   max-width: 530px;
   width: 100%;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     margin: 0 0 0 30px;
   }
 
@@ -98,7 +98,7 @@ export const WealthManagementHeading = styled.div`
     background: #ffffff;
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     font-size: 22px;
     line-height: 34px;
     margin: 0 0 30px 0;
@@ -120,7 +120,7 @@ export const WealthManagementHeading = styled.div`
 `;
 
 export const WealthManagementContent = styled.div`
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     margin: 300px 0 0;
   }
 `;
@@ -133,7 +133,7 @@ export const WealthManagementLiDetails = styled.div`
   max-width: 490px;
   width: 100%;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     margin: 0;
   }
 `;
@@ -157,7 +157,7 @@ export const WealthManagementDescription = styled.div`
   text-align: left;
   color: #fff;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     font-size: 14px;
     height: 67px;
   }
@@ -171,7 +171,7 @@ export const WealthManagementDescription = styled.div`
 export const WealthManagementRightContent = styled.div`
   margin: 610px 0 0 0;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     margin: 10px 0 0;
   }
 `;

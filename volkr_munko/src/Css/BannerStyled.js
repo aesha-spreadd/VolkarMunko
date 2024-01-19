@@ -4,7 +4,7 @@ export const BannerSection = styled.div`
   overflow: hidden;
   padding: 100px 0 50px;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     padding: 150px 0 50px 0;
   }
 `;
@@ -68,7 +68,7 @@ export const BannerHeading = styled.div`
     background: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     &::after {
       max-width: 368px;
       width: 100%;
