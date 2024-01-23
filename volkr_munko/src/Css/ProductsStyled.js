@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import img from '../Assests/productBg.png';
+import productBg from '../assests/productbackground.png';
+import productFooterBg from '../assests/productfooterbg.png';
 
 export const ProductSection = styled.div`
-  background: #f8f8f8;
+  background: #fbfbfb;
   padding: 80px 0 20px;
   margin: 0 0 100px 0;
   display: flex;
@@ -10,14 +11,18 @@ export const ProductSection = styled.div`
 
   &::before {
     content: '';
-    background: url(${img});
+    background: url(${productBg}) no-repeat;
     height: 100px;
     width: 100%;
     background-size: 100%;
     background-position: center top;
     position: absolute;
-    top: -50px;
-    z-index: -1;
+    top: -78px;
+    z-index: 1;
+  }
+
+  @media (max-width: 991px) {
+    padding: 30px 0 40px;
   }
 `;
 
@@ -25,6 +30,23 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1088px;
   margin: 0 auto;
+
+  &::after {
+    content: '';
+    background: url(${productFooterBg}) no-repeat;
+    height: 158px;
+    width: 100%;
+    background-position: center bottom;
+    background-size: 100% auto;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    z-index: 1;
+  }
+
+  @media (max-width: 1199px) {
+    padding: 0 20px;
+  }
 `;
 
 export const ProductsInner = styled.div``;
@@ -185,6 +207,10 @@ export const ProductsInnerCard = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @media (max-width: 1199px) {
+    justify-content: space-around;
+  }
+
   @media (max-width: 768px) {
     justify-content: center;
     gap: 20px;
@@ -192,15 +218,15 @@ export const ProductsInnerCard = styled.div`
 `;
 
 export const ProductInnerCardDetails = styled.div`
-  max-width: 300px;
+  max-width: 337px;
   width: 100%;
-  height: 450px;
+  height: 466px;
   padding: 10px;
   position: relative;
   border-radius: 20px;
   border: solid 1px #e9e5e5;
   background-color: #fff;
-  margin: 30px 0 0;
+  margin: 30px 0 0 -28px;
   transition: transform 0.5s;
   transform-style: preserve-3d;
 
@@ -208,6 +234,10 @@ export const ProductInnerCardDetails = styled.div`
     transform: rotateY(180deg);
     background-color: #434345;
     height: 450px;
+  }
+
+  @media (max-width: 991px) {
+    margin: 30px 0 0 -5px;
   }
 `;
 
@@ -238,10 +268,9 @@ export const BackCard = styled.div`
 `;
 
 export const ProductCardIButton = styled.div`
-  object-fit: contain;
   position: absolute;
   top: 11px;
-  left: 249px;
+  left: 281px;
   transform: translateX(-50%);
 
   img {

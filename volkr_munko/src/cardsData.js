@@ -1,7 +1,7 @@
-import ibutton from './Assests/information-button.png';
-import icon from './Assests/icon.png';
+import ibutton from './assests/information-button.png';
+import icon from './assests/icon.png';
 
-const cardsData = [
+export const cardData = [
   {
     ibuttonSrc: ibutton,
     iconSrc: icon,
@@ -58,4 +58,20 @@ const cardsData = [
   },
 ];
 
-export default cardsData;
+export const advantagesList = [
+  { number: 1, content: 'You take center stage' },
+  { number: 2, content: 'Your finances: easier than ever' },
+  { number: 3, content: 'With the best partners at your side' },
+];
+
+export const wealthManagementData = [
+  'Am I properly insured? Can I optimize my contracts? Do I end up paying too much?',
+  'What is my financial situation like in the event of illness, care or disability?',
+  'Should I continue to rent or can I afford a property?',
+  'How can I reduce taxes and social security contributions?',
+  'How can I save more without giving up a good life?',
+  'What alternatives are there to the savings book? Is my money well spent?',
+  'How can I use government funding?',
+  'What alternatives are there to the savings book? Is my money well spent?',
+  'How can I protect my money from inflation?',
+];

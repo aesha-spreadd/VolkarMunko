@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const AdvantagesSection = styled.div`
-  padding: 100px 0;
+  padding: 200px 0;
+  background: #ffffff;
 `;
 
 export const Container = styled.div`
@@ -18,7 +19,7 @@ export const AdvantagesInnerPart = styled.div`
   box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
   height: 590px;
 
-  @media (max-width: 668px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     height: max-content;
   }
@@ -27,8 +28,6 @@ export const AdvantagesInnerPart = styled.div`
 export const AdvantageLeftInner = styled.div``;
 
 export const AdvantageRightInner = styled.div`
-  margin: 0 0 0 60px;
-
   @media (max-width: 991px) {
     margin: 30px 0 0 50px;
   }
@@ -42,7 +41,7 @@ export const LeftImage = styled.div`
     top: -7px;
   }
 
-  @media (max-width: 668px) {
+  @media (max-width: 768px) {
     img {
       max-width: 350px;
       width: 100%;
@@ -56,9 +55,9 @@ export const AdvantagesContent = styled.div`
 
 export const AdvantageHeading = styled.div`
   font-family: 'Quicksand-Bold';
-  font-size: 52px;
+  font-size: 51px;
   font-weight: bold;
-  line-height: 74px;
+  line-height: 72px;
   letter-spacing: -0.56px;
   color: #14183e;
   max-width: 565px;
@@ -84,7 +83,8 @@ export const AdvantageHeading = styled.div`
     margin: 0 0 20px 0;
 
     &::before {
-      width: 230px;
+      max-width: 230px;
+      width: 100%;
       height: 30px;
     }
   }
@@ -113,17 +113,17 @@ export const AdvantageLiDetails = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 0 0 10px 0;
+  margin: 0 0 24px 0;
 `;
 
 export const LiNumber = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #5c5c5e;
-  max-width: 24px;
+  background: radial-gradient(#767678, #3b3b3c);
+  max-width: 14px;
   width: 100%;
-  height: 24px;
+  height: 14px;
   border-radius: 50px;
   margin: 0 26px 0 0;
   padding: 10px;
@@ -135,7 +135,8 @@ export const LiNumber = styled.div`
 
   @media (max-width: 991px) {
     font-size: 12px;
-    width: 14px;
+    max-width: 14px;
+    width: 100%;
     height: 14px;
     margin: 0 16px 0 0;
   }

@@ -1,26 +1,26 @@
 import React from 'react';
 import {
-  FianceLeftInner,
-  FianceRightInner,
+  FinanceLeftInner,
+  FinanceRightInner,
   FinanceSection,
   FinanceSectionInnerPart,
   Container,
-  FianceHeading,
-  FianceDescription,
-  FianceButton,
-  FianceRightMainHeading,
-  FianceRightHeading,
+  FinanceHeading,
+  FinanceDescription,
+  FinanceButton,
+  FinanceRightMainHeading,
+  FinanceRightHeading,
   HeadingDivider,
-  FianceImagePortion,
-  FianceImages,
-  FianceImagesTwo,
+  FinanceImagePortion,
+  FinanceImages,
+  FinanceImagesTwo,
   ImageDivider,
-  FianceImageInner,
+  FinanceImageInner,
   RightInnerImageDescription,
-} from '../Css/FinanceStyled';
+} from '../css/FinanceStyled';
 
-import img from '../Assests/FianceImage.jpg';
-import imgtwo from '../Assests/FianceImageTwo.jpg';
+import img from '../assests/FianceImage.jpg';
+import imgtwo from '../assests/FianceImageTwo.jpg';
 
 const Finance = () => {
   return (
@@ -28,38 +28,37 @@ const Finance = () => {
       <FinanceSection>
         <Container>
           <FinanceSectionInnerPart>
-            <FianceLeftInner>
-              <FianceHeading>Competence for your finances</FianceHeading>
-              <FianceDescription>
+            <FinanceLeftInner>
+              <FinanceHeading>Competence for your finances</FinanceHeading>
+              <FinanceDescription>
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
                 normal distribution of letters, as opposed to using 'Content
                 here, content here', making it look like readable English
-              </FianceDescription>
-              <FianceButton>Contact Us</FianceButton>
-            </FianceLeftInner>
-            <FianceRightInner>
-              <FianceRightMainHeading>
-                <HeadingDivider />
-                <FianceRightHeading> EXCELLENT ADVICE</FianceRightHeading>
-              </FianceRightMainHeading>
-              <FianceImagePortion>
-                <FianceImageInner>
-                  <FianceImages>
+              </FinanceDescription>
+              <FinanceButton>Contact Us</FinanceButton>
+            </FinanceLeftInner>
+            <FinanceRightInner>
+              <FinanceRightMainHeading>
+                <FinanceRightHeading> EXCELLENT ADVICE</FinanceRightHeading>
+              </FinanceRightMainHeading>
+              <FinanceImagePortion>
+                <FinanceImageInner>
+                  <FinanceImages>
                     <img src={img} alt="fianceimage" />
-                  </FianceImages>
+                  </FinanceImages>
                   <ImageDivider />
-                  <FianceImagesTwo>
+                  <FinanceImagesTwo>
                     <img src={imgtwo} alt="fianceimage" />
-                  </FianceImagesTwo>
-                </FianceImageInner>
+                  </FinanceImagesTwo>
+                </FinanceImageInner>
                 <RightInnerImageDescription>
                   We are regularly recognized by independent institutes for our
                   quality in customer advice and service.
                 </RightInnerImageDescription>
-              </FianceImagePortion>
-            </FianceRightInner>
+              </FinanceImagePortion>
+            </FinanceRightInner>
           </FinanceSectionInnerPart>
         </Container>
       </FinanceSection>

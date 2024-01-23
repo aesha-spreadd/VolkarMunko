@@ -22,10 +22,9 @@ import {
   FrontCard,
   BackCard,
   ProductBackDescription,
-} from '../Css/ProductsStyled';
-
-import img from '../Assests/manicon.png';
-import groupIcon from '../Assests/GroupIcon.png';
+} from '../css/ProductsStyled';
+import img from '../assests/manicon.png';
+import groupIcon from '../assests/GroupIcon.png';
 
 const Products = ({ data }) => {
   return (
@@ -44,7 +43,7 @@ const Products = ({ data }) => {
               <ProductButtons>
                 <PrivateCustomerButton>
                   <PrivateCustomerButtonIcon>
-                    <img src={img} alt="manicon" />
+                    <img src={img} alt="man" />
                   </PrivateCustomerButtonIcon>
                   <PrivateCustomerButtonText>
                     Private Customer
@@ -52,7 +51,7 @@ const Products = ({ data }) => {
                 </PrivateCustomerButton>
                 <PrivateGroupButton>
                   <GroupButtonIcon>
-                    <img src={groupIcon} alt="groupicon" />
+                    <img src={groupIcon} alt="group" />
                   </GroupButtonIcon>
                   <GroupButtonText>Corporate Customers</GroupButtonText>
                 </PrivateGroupButton>
@@ -64,7 +63,7 @@ const Products = ({ data }) => {
                   <ProductInnerCardDetails key={index}>
                     <FrontCard>
                       <ProductCardIButton>
-                        <img src={card.ibuttonSrc} alt="Ibutton" />
+                        <img src={card.ibuttonSrc} alt="ibutton" />
                       </ProductCardIButton>
                       <ProductCardIcon>
                         <img src={card.iconSrc} alt="iconbutton" />
@@ -74,7 +73,7 @@ const Products = ({ data }) => {
                     </FrontCard>
                     <BackCard>
                       <ProductCardIButton>
-                        <img src={card.ibuttonSrc} alt="Ibutton" />
+                        <img src={card.ibuttonSrc} alt="ibutton" />
                       </ProductCardIButton>
                       <ProductBackDescription>
                         It is a long established fact that a reader will be

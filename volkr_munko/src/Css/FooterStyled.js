@@ -1,15 +1,13 @@
 import styled from 'styled-components';
-import img from '../Assests/Footer.png';
+import img from '../assests/Footer.png';
 
 export const FooterSection = styled.div`
   background: url(${img}) no-repeat;
   background-position: center top;
   background-size: cover;
-  max-height: 334px;
-  height: auto;
-  padding: 126px 0 34px;
-  object-fit: contain;
+  max-height: 500px;
   width: 100%;
+  height: auto;
   overflow: hidden;
 `;
 
@@ -67,60 +65,6 @@ export const FooterDescription = styled.div`
   }
 `;
 
-export const FooterInnerDivider = styled.div`
-  max-width: 1000px;
-  width: 100%;
-  height: 0;
-  margin: 68px 0 0 -32px;
-  border: solid 1px rgba(255, 255, 255, 0.23);
-`;
-
-export const FooterCopyRight = styled.div`
-  display: flex;
-  margin: 20px 0;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
-export const CopyRightText = styled.div`
-  width: 100%;
-  height: 22px;
-  margin: 0 0 0 70px;
-  font-family: 'Nunito-Regular';
-  font-size: 16px;
-  line-height: 20px;
-  text-align: left;
-  color: #eee;
-
-  @media (max-width: 768px) {
-    margin: 0 0 0 20px;
-  }
-`;
-
-export const CopyRightList = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: flex-start;
-    margin: 0 0 0 20px;
-  }
-`;
-
-export const CopyRightData = styled.div`
-  height: 22px;
-  font-family: 'Nunito-Regular';
-  font-size: 16px;
-  line-height: 20px;
-  text-align: left;
-  color: #eee;
-`;
-
-export const CopyRightDataDivider = styled.div`
-  height: 20px;
-  margin: 0 8px 0;
-  border: solid 1px #5d5d5d;
+export const FooterTop = styled.div`
+  padding: 124px 0 60px;
 `;

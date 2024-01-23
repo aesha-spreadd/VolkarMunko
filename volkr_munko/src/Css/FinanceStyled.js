@@ -1,59 +1,54 @@
 import styled from 'styled-components';
 
 export const FinanceSection = styled.div`
-  overflow: hidden;
+  display: block;
+  background: #fff;
 `;
 
 export const Container = styled.div`
-  margin: 0 auto;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 768px) {
-    justify-content: flex-start;
-  }
+  max-width: 1088px;
+  margin: 0 auto;
 `;
 
 export const FinanceSectionInnerPart = styled.div`
+  padding: 50px 0 100px;
+  margin: 0 0 52px 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     flex-direction: column;
     justify-content: flex-start;
   }
 `;
 
-export const FianceLeftInner = styled.div`
-  max-width: 48%;
-  width: 100%;
-
-  @media (max-width: 768px) {
-    max-width: 100%;
+export const FinanceLeftInner = styled.div`
+  @media (max-width: 991px) {
+    margin: 0 20px;
   }
 `;
 
-export const FianceHeading = styled.div`
+export const FinanceHeading = styled.div`
   position: relative;
-  max-width: 394px;
+  max-width: 565px;
   width: 100%;
-  height: 148px;
-  margin: 68px 0 52px 20px;
+  margin: 0 0 40px;
   font-family: 'Quicksand-Bold';
-  font-size: 50px;
+  font-size: 51px;
   font-weight: bold;
-  line-height: 70px;
+  line-height: 72px;
   letter-spacing: -0.56px;
   text-align: left;
+  text-transform: uppercase;
   color: #14183e;
+  z-index: 2;
 
   &::after {
     content: '';
     position: absolute;
-    top: 78px;
+    top: -4px;
     left: 0;
     max-width: 427px;
     width: 100%;
@@ -62,52 +57,50 @@ export const FianceHeading = styled.div`
     background: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     width: 100%;
-    height: 79px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 42px;
+    line-height: 31px;
     letter-spacing: -0.3px;
-    margin: 68px 0 52px 16px;
 
     &::after {
       max-width: 288px;
       width: 100%;
       height: 46px;
-      top: 42px;
+      top: -12px;
     }
   }
 `;
 
-export const FianceDescription = styled.div`
-  max-width: 500px;
+export const FinanceDescription = styled.div`
+  max-width: 565px;
   width: 100%;
-  height: 86px;
-  margin: 52px 0 66px 20px;
   font-family: 'Nunito-Regular';
   font-size: 18px;
-  line-height: 30px;
+  line-height: 31px;
   letter-spacing: -0.18px;
-  text-align: left;
   color: #37415c;
 
-  @media (max-width: 768px) {
-    height: 79px;
-    margin: 0 7px 30px 14px;
+  @media (max-width: 991px) {
+    width: 100%;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: -0.12px;
   }
 `;
 
-export const FianceButton = styled.div`
-  max-width: 102px;
+export const FinanceButton = styled.div`
+  position: relative;
   width: 100%;
-  margin: 96px 0 0 16px;
-  padding: 14px 48px;
-  border-radius: 10px;
-  height: 22px;
+  max-width: 210px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin: 50px 0 20px;
+  padding: 10px 20px;
   font-family: 'Nunito-Bold';
   font-size: 18px;
   font-weight: 500;
@@ -122,121 +115,108 @@ export const FianceButton = styled.div`
     color: #fff;
   }
 
-  @media (max-width: 768px) {
-    margin: 45px 0 0 16px;
+  @media (max-width: 991px) {
+    margin: 46px 0 0 0;
   }
 `;
 
-export const FianceRightInner = styled.div`
-  max-width: 48%;
-  width: 100%;
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-    margin: -35px 0 0 0;
+export const FinanceRightInner = styled.div`
+  @media (max-width: 991px) {
+    margin: 0 20px;
   }
 `;
 
-export const FianceRightMainHeading = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 120px 0 0;
+export const FinanceRightMainHeading = styled.div`
+  max-width: 440px;
+  width: 100%;
+
+  @media (max-width: 1199px) {
+    max-width: 400px;
+    width: 100%;
+  }
 `;
 
-export const HeadingDivider = styled.div`
-  max-width: 49px;
-  width: 100%;
-  height: 0;
-  margin: 20px 42px 0 0;
-  border: solid 2px #3b3b3c;
-`;
-
-export const FianceRightHeading = styled.div`
-  max-width: 263px;
-  width: 100%;
-  height: 36px;
-  margin: 0 0 0 42px;
+export const FinanceRightHeading = styled.div`
+  position: relative;
+  padding: 0 0 0 70px;
+  margin: 0 0 40px 0;
   font-family: 'Quicksand-Bold';
-  font-size: 24px;
+  font-size: 29px;
   font-weight: bold;
-  line-height: 36px;
+  line-height: 44px;
   letter-spacing: -0.29px;
   text-align: left;
   color: #14183e;
 
-  @media (max-width: 767px) {
-    margin: 0;
-  }
-`;
-
-export const FianceImagePortion = styled.div`
-  max-width: 350px;
-  width: 100%;
-  height: 260px;
-  margin: 26px 0 126px 74px;
-  padding: 42px 34px 20px 16px;
-  border-radius: 23px;
-  border: solid 1px #cfcfcf;
-  background-color: #fff;
-
-  @media (max-width: 768px) {
-    max-width: 450px;
-    width: 100%;
-    height: 330px;
-    margin: 26px 38px 126px 36px;
-    padding: 42px 4px 20px 6px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 2px;
+    width: 50px;
+    background: #3b3b3c;
   }
 
-  @media (max-width: 567px) {
-    max-width: 272px;
-    margin: 50px 0 92px 20px;
-  }
-`;
+  @media (max-width: 991px) {
+    font-size: 17px;
+    margin: 40px 0 20px;
+    padding: 0 0 0 50px;
 
-export const FianceImages = styled.div`
-  img {
-    max-width: 96px;
-    width: 100%;
-    height: 151px;
-    margin: 0 8px 42px 16px;
-    object-fit: contain;
-  }
-`;
-
-export const FianceImagesTwo = styled.div`
-  img {
-    max-width: 128px;
-    width: 100%;
-    height: 138px;
-    margin: 10px 0 46px 46px;
-    object-fit: contain;
-  }
-
-  @media (max-width: 768px) {
-    img {
-      max-width: 120px;
-      width: 100%;
-      height: 138px;
-      margin: 10px 16px 46px 0;
+    &::before {
+      width: 30px;
     }
   }
 `;
 
-export const ImageDivider = styled.div`
-  height: 141px;
-  margin: 2px 0 48px;
+export const FinanceImagePortion = styled.div`
+  padding: 40px;
+  border-radius: 23px;
   border: solid 1px #cfcfcf;
+
+  @media (max-width: 1199px) {
+    padding: 20px;
+    margin: 0 40px 0 0;
+  }
 `;
 
-export const FianceImageInner = styled.div`
+export const FinanceImages = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 70%;
+  }
+`;
+
+export const FinanceImagesTwo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 70%;
+  }
+`;
+
+export const ImageDivider = styled.div`
+  width: 1px;
+  height: 130px;
+  margin: 0 30px;
+  background: #cfcfcf;
+`;
+
+export const FinanceImageInner = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const RightInnerImageDescription = styled.div`
-  max-width: 370px;
+  margin: 40px 0 0;
+  max-width: 350px;
   width: 100%;
-  height: 78px;
   font-family: 'Nunito-Regular';
   font-size: 16px;
   line-height: 28px;
@@ -244,14 +224,8 @@ export const RightInnerImageDescription = styled.div`
   text-align: center;
   color: #707684;
 
-  @media (max-width: 768px) {
-    max-width: 400px;
-    width: 100%;
-    margin: 0 20px;
-  }
-
-  @media (max-width: 567px) {
-    max-width: 200px;
-    width: 100%;
+  @media (max-width: 991px) {
+    font-size: 12px;
+    line-height: 21px;
   }
 `;

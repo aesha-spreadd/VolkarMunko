@@ -11,10 +11,10 @@ import {
   MenuLi,
   MobileHideButton,
   MobileOpen,
-} from '../Css/NavbarStyled';
+} from '../css/NavbarStyled';
 
-import img from '../Assests/VmLogo_navbar.png';
-import navbaricon from '../Assests/navbaricon.png';
+import img from '../assests/VmLogo_navbar.png';
+import navbaricon from '../assests/navbaricon.png';
 import { FiAlignJustify } from 'react-icons/fi';
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
           <NavbarInner>
             <NavbarLeft>
               <LeftLogo>
-                <img src={img} alt="VmLogo" />
+                <img src={img} alt="vmlogo" />
               </LeftLogo>
             </NavbarLeft>
             <NavbarRight>

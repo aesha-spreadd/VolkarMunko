@@ -6,7 +6,7 @@ import Contact from './Components/Contact';
 import Advantages from './Components/Advantages';
 import WealthManagement from './Components/WealthManagement';
 import Products from './Components/Products';
-import cardsData from './cardsData';
+import { cardData, advantagesList, wealthManagementData } from './cardsData';
 import { GlobalStyles } from './GlobalStyles';
 
 const App = () => {
@@ -15,9 +15,9 @@ const App = () => {
       <GlobalStyles />
       <Banner />
       <Finance />
-      <Products data={cardsData} />
-      <Advantages />
-      <WealthManagement />
+      <Products data={cardData} />
+      <Advantages data={advantagesList} />
+      <WealthManagement data={wealthManagementData} />
       <Contact />
       <Footer />
     </div>

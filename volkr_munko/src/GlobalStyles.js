@@ -11,9 +11,9 @@ import QuicksandLight from './font/Quicksand/Quicksand_Light.otf';
 export const GlobalStyles = createGlobalStyle`  
 
 body{
-  margin: 0;
+  margin: 4px;
   padding: 0;
-  background: #f9f9f9;
+  background:#ffffff;
 }
 
   @font-face {
