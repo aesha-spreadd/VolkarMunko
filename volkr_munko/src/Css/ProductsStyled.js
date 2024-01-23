@@ -269,7 +269,7 @@ export const BackCard = styled.div`
 export const ProductCardIButton = styled.div`
   position: absolute;
   top: 11px;
-  left: 281px;
+  left: 312px;
   transform: translateX(-50%);
 
   img {

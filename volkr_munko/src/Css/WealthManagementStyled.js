@@ -5,8 +5,7 @@ import wealthmanagementbackground from '../assests/wealthmanagementbg.png';
 export const WealthManagementSection = styled.div`
   background: url(${wealthmanagementbackground}) no-repeat;
   background-size: cover;
-  max-height: 1600px;
-  height: auto;
+  height: 1600px;
   background-position: center top;
   position: relative;
 
@@ -15,8 +14,7 @@ export const WealthManagementSection = styled.div`
     background: url(${img}) no-repeat;
     max-width: 560px;
     width: 100%;
-    max-height: 620px;
-    height: auto;
+    height: 620px;
     background-size: 560px 620px;
     position: absolute;
     right: 0;

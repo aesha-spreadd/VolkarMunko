@@ -6,7 +6,7 @@ export const BannerSection = styled.div`
   margin: 20px;
   position: relative;
   padding: 124px 0 30px;
-  background: #fbfbfb;
+  background: linear-gradient(180deg, #f8f8f8, #fff);
 
   @media (max-width: 991px) {
     margin: 10px;
