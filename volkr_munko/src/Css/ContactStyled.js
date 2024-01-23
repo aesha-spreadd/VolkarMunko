@@ -31,8 +31,7 @@ export const LeftInnerPart = styled.div`
   position: relative;
 
   @media (max-width: 991px) {
-    margin: 0 20px;
-    max-width: 250px;
+    max-width: 550px;
     width: 100%;
   }
 `;
@@ -50,14 +49,26 @@ export const LeftInnerMap = styled.div`
     width: 100%;
     height: 40px;
     position: absolute;
-    top: 209px;
-    right: 229px;
+    top: 214px;
+    right: 238px;
+  }
+
+  @media (max-width: 991px) {
+    img {
+      top: 214px;
+      right: 288px;
+    }
   }
 
   @media (max-width: 557px) {
     iframe {
       max-width: 290px;
       width: 100%;
+    }
+
+    img {
+      top: 215px;
+      right: 160px;
     }
   }
 `;
@@ -170,6 +181,11 @@ export const ContactDetailsofIcon = styled.div`
   text-align: left;
   color: #37415c;
 
+  a {
+    text-decoration: none;
+    color: #37415c;
+  }
+
   @media (max-width: 991px) {
     font-size: 14px;
     max-width: 240px;
@@ -177,4 +193,6 @@ export const ContactDetailsofIcon = styled.div`
   }
 `;
 
-export const MapContent = styled.div``;
+export const MapContent = styled.div`
+  position: relative;
+`;

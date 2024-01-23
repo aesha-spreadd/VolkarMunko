@@ -151,7 +151,8 @@ export const BannerButtonHide = styled.div`
     align-items: center;
     max-width: 186px;
     width: 100%;
-    height: 50px;
+    max-height: 50px;
+    height: auto;
     padding: 0 28px;
     border-radius: 10px;
     font-family: 'Nunito-Regular';

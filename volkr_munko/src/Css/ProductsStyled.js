@@ -167,7 +167,6 @@ export const GroupButtonIcon = styled.div`
   width: 100%;
   height: 24px;
   margin: 0 28px 0 0;
-  object-fit: contain;
 
   img {
     margin: 20px 0 0 0;
@@ -285,7 +284,6 @@ export const ProductCardIcon = styled.div`
   width: 100%;
   height: 138px;
   margin: 18px 32px 42px -10px;
-  object-fit: contain;
 `;
 
 export const ProductCardText = styled.div`
@@ -323,7 +321,8 @@ export const ProductCardButton = styled.div`
 export const ProductBackDescription = styled.div`
   max-width: 274px;
   width: 100%;
-  height: 450px;
+  max-height: 450px;
+  height: auto;
   margin: -70px 0 0 26px;
   padding: 150px 26px 10px 20px;
   font-family: 'Nunito-Regular';

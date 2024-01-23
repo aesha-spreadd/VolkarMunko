@@ -17,7 +17,8 @@ export const AdvantagesInnerPart = styled.div`
   align-items: center;
   border-radius: 24px;
   box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
-  height: 590px;
+  max-height: 590px;
+  height: auto;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -72,7 +73,8 @@ export const AdvantageHeading = styled.div`
     left: 0;
     max-width: 427px;
     width: 100%;
-    height: 68px;
+    max-height: 68px;
+    height: auto;
     z-index: -1;
     background: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
   }
@@ -85,7 +87,8 @@ export const AdvantageHeading = styled.div`
     &::before {
       max-width: 230px;
       width: 100%;
-      height: 30px;
+      max-height: 30px;
+      height: auto;
     }
   }
 `;

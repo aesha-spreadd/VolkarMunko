@@ -15,7 +15,8 @@ export const WealthManagementSection = styled.div`
     background: url(${img}) no-repeat;
     max-width: 560px;
     width: 100%;
-    height: 620px;
+    max-height: 620px;
+    height: auto;
     background-size: 560px 620px;
     position: absolute;
     right: 0;
@@ -30,7 +31,8 @@ export const WealthManagementSection = styled.div`
     &::before {
       max-width: 270px;
       width: 100%;
-      height: 290px;
+      max-height: 290px;
+      height: auto;
       background-size: 270px 290px;
       top: 230px;
     }

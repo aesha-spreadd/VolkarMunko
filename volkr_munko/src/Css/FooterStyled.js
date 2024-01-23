@@ -29,7 +29,6 @@ export const FooterSectionLogo = styled.div`
     width: 100%;
     height: 112px;
     margin: 0 588px 38px 588px;
-    object-fit: contain;
   }
 
   @media (max-width: 768px) {
@@ -38,7 +37,6 @@ export const FooterSectionLogo = styled.div`
       width: 100%;
       height: 66px;
       margin: 0 132px 18px 130px;
-      object-fit: contain;
     }
   }
 `;

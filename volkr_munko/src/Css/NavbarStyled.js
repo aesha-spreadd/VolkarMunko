@@ -79,7 +79,7 @@ export const MenuLi = styled.div`
   font-weight: 600;
   line-height: 12px;
   letter-spacing: -0.2px;
-  color: #686868;
+  color: #3b3b3c;
   margin: 0 30px 0 0;
   white-space: nowrap;
 `;
@@ -89,7 +89,7 @@ export const MobileHideButton = styled.div`
   font-size: 16px;
   font-weight: bold;
   letter-spacing: -0.16px;
-  color: #676768;
+  color: #3b3b3c;
   width: 100%;
   border-radius: 10px;
   padding: 12px 26px;
