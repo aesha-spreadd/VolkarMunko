@@ -49,7 +49,7 @@ const Contact = () => {
                 <ContactDetails>
                   <ContactContent>
                     <ContactIcon>
-                      <img src={img} alt="map" />
+                      <img src={img} alt="google-map" />
                     </ContactIcon>
                     <ContactDetailsofIcon>
                       Office for Allfinanz German investment advice On the heath
@@ -60,14 +60,18 @@ const Contact = () => {
                     <ContactIcon>
                       <img src={calliconimg} alt="call" />
                     </ContactIcon>
-                    <ContactDetailsofIcon>05733 881883</ContactDetailsofIcon>
+                    <ContactDetailsofIcon>
+                      <a href="tel:(0049)176/23148867">05733 881883 </a>
+                    </ContactDetailsofIcon>
                   </ContactContent>
                   <ContactContent>
                     <ContactIcon>
                       <img src={emailicon} alt="email" />
                     </ContactIcon>
                     <ContactDetailsofIcon>
-                      Volker.Munko@allfinanz.ag
+                      <a href="mailto:paesha61@gmail.com">
+                        Volker.Munko@allfinanz.ag
+                      </a>
                     </ContactDetailsofIcon>
                   </ContactContent>
                 </ContactDetails>
