@@ -154,7 +154,8 @@ export const FinanceRightHeading = styled.div`
     left: 0;
     top: 50%;
     height: 2px;
-    width: 50px;
+    max-width: 50px;
+    width: 100%;
     background: #3b3b3c;
   }
 
@@ -164,7 +165,8 @@ export const FinanceRightHeading = styled.div`
     padding: 0 0 0 50px;
 
     &::before {
-      width: 30px;
+      max-width: 30px;
+      width: 100%;
     }
   }
 `;
