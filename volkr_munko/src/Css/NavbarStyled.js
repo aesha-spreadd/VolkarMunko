@@ -4,8 +4,9 @@ export const NavbarSection = styled.div`
   padding: 30px 0 0;
   position: absolute;
   top: 0;
+  max-width: 90%;
   width: 100%;
-  z-index: 9;
+  z-index: 1;
 
   @media (max-width: 991px) {
     padding: 10px 0;
@@ -35,13 +36,14 @@ export const NavbarLeft = styled.div``;
 export const LeftLogo = styled.div`
   margin: 0 36px;
 
-  @media (max-width: 991px) {
-    margin: 0 14px 0;
-
-    img {
+  img {
+    @media (max-width: 991px) {
       max-width: 70%;
       width: 100%;
     }
+  }
+  @media (max-width: 991px) {
+    margin: 0 14px 0;
   }
 `;
 
@@ -74,7 +76,7 @@ export const UlMenuMobileHide = styled.div`
 export const MenuLi = styled.div`
   max-width: 120px;
   width: 100%;
-  font-family: 'Nunito-SemiBold';
+  font-family: Nunito-SemiBold;
   font-size: 18px;
   font-weight: 600;
   line-height: 12px;
@@ -85,7 +87,7 @@ export const MenuLi = styled.div`
 `;
 
 export const MobileHideButton = styled.div`
-  font-family: 'Nunito-Bold';
+  font-family: Nunito-Bold;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: -0.16px;

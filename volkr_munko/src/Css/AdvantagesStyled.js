@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const AdvantagesSection = styled.div`
   padding: 200px 0;
   background: #ffffff;
+
+  @media (max-width: 991px) {
+    padding: 100px 0;
+  }
 `;
 
 export const Container = styled.div`
@@ -20,15 +24,15 @@ export const AdvantagesInnerPart = styled.div`
   max-height: 590px;
   height: auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     flex-direction: column;
-    height: max-content;
+    max-height: 800px;
   }
 `;
 
-export const AdvantageLeftInner = styled.div``;
+export const AdvantageLeft = styled.div``;
 
-export const AdvantageRightInner = styled.div`
+export const AdvantageRight = styled.div`
   @media (max-width: 991px) {
     margin: 30px 0 0 50px;
   }
@@ -40,10 +44,8 @@ export const LeftImage = styled.div`
     width: 100%;
     position: relative;
     top: -7px;
-  }
 
-  @media (max-width: 768px) {
-    img {
+    @media (max-width: 767px) {
       max-width: 350px;
       width: 100%;
     }
@@ -55,7 +57,7 @@ export const AdvantagesContent = styled.div`
 `;
 
 export const AdvantageHeading = styled.div`
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 51px;
   font-weight: bold;
   line-height: 72px;
@@ -65,36 +67,35 @@ export const AdvantageHeading = styled.div`
   width: 100%;
   margin: 0 0 20px;
   position: relative;
+  z-index: 1;
 
   &::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     max-width: 427px;
     width: 100%;
-    max-height: 68px;
-    height: auto;
+    height: 68px;
     z-index: -1;
     background: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
+
+    @media (max-width: 991px) {
+      max-width: 230px;
+      width: 100%;
+      height: 30px;
+    }
   }
 
   @media (max-width: 991px) {
     font-size: 24px;
     line-height: 30px;
     margin: 0 0 20px 0;
-
-    &::before {
-      max-width: 230px;
-      width: 100%;
-      max-height: 30px;
-      height: auto;
-    }
   }
 `;
 
-export const AdvantagesDecription = styled.div`
-  font-family: 'Nunito-Regular';
+export const AdvantagesDescription = styled.div`
+  font-family: Nunito-Regular;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.18px;
@@ -130,7 +131,7 @@ export const LiNumber = styled.div`
   border-radius: 50px;
   margin: 0 26px 0 0;
   padding: 10px;
-  font-family: 'Nunito-Bold';
+  font-family: Nunito-Bold;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.18px;
@@ -146,7 +147,7 @@ export const LiNumber = styled.div`
 `;
 
 export const LiContent = styled.div`
-  font-family: 'Nunito-SemiBold';
+  font-family: Nunito-SemiBold;
   font-size: 20px;
   font-weight: 600;
   line-height: 34px;

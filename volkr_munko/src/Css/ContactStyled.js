@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ContactSection = styled.div`
   padding: 140px 0;
-  background: linear-gradient(180deg, #f8f8f8, #fff);
 
   @media (max-width: 991px) {
     padding: 50px 20px;
@@ -25,7 +24,7 @@ export const ContactSectionInnerPart = styled.div`
   }
 `;
 
-export const LeftInnerPart = styled.div`
+export const LeftInner = styled.div`
   max-width: 500px;
   width: 100%;
   position: relative;
@@ -42,6 +41,11 @@ export const LeftInnerMap = styled.div`
   iframe {
     border-radius: 22px;
     border-color: #f8f9fa;
+
+    @media (max-width: 575px) {
+      max-width: 290px;
+      width: 100%;
+    }
   }
 
   img {
@@ -51,29 +55,20 @@ export const LeftInnerMap = styled.div`
     position: absolute;
     top: 214px;
     right: 238px;
-  }
 
-  @media (max-width: 991px) {
-    img {
+    @media (max-width: 991px) {
       top: 214px;
       right: 288px;
     }
-  }
 
-  @media (max-width: 557px) {
-    iframe {
-      max-width: 290px;
-      width: 100%;
-    }
-
-    img {
+    @media (max-width: 575px) {
       top: 215px;
       right: 160px;
     }
   }
 `;
 
-export const RightInnerPart = styled.div`
+export const RightInner = styled.div`
   max-width: 500px;
   width: 100%;
   margin: 0 0 0 30px;
@@ -86,7 +81,7 @@ export const RightInnerPart = styled.div`
 export const ContactArea = styled.div``;
 
 export const ContactAreaHeading = styled.div`
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 22px;
   font-weight: bold;
   line-height: 34px;
@@ -116,7 +111,7 @@ export const ContactAreaHeading = styled.div`
 `;
 
 export const ContactAreaCompanyName = styled.div`
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 51px;
   font-weight: bold;
   line-height: 72px;
@@ -136,6 +131,12 @@ export const ContactAreaCompanyName = styled.div`
     max-width: 330px;
     width: 100%;
     background: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
+
+    @media (max-width: 991px) {
+      height: 40px;
+      max-width: 230px;
+      width: 100%;
+    }
   }
 
   @media (max-width: 991px) {
@@ -143,12 +144,6 @@ export const ContactAreaCompanyName = styled.div`
     line-height: 32px;
     max-width: 230px;
     width: 100%;
-
-    &::before {
-      height: 40px;
-      max-width: 230px;
-      width: 100%;
-    }
   }
 `;
 
@@ -162,18 +157,20 @@ export const ContactContent = styled.div`
 `;
 
 export const ContactIcon = styled.div`
-  @media (max-width: 991px) {
-    img {
-      max-width: 50px;
+  img {
+    @media (max-width: 991px) {
+      max-width: 40px;
       width: 100%;
-      height: 50px;
+      max-height: 40px;
     }
   }
 `;
 
-export const ContactDetailsofIcon = styled.div`
+export const ContactDetailsOfIcon = styled.div`
+  display: flex;
+  align-items: center;
   margin: 0 0 0 38px;
-  font-family: 'Nunito-SemiBold';
+  font-family: Nunito-SemiBold;
   font-size: 20px;
   font-weight: 600;
   line-height: 35px;

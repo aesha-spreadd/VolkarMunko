@@ -24,7 +24,9 @@ export const FinanceSectionInnerPart = styled.div`
   }
 `;
 
-export const FinanceLeftInner = styled.div`
+export const FinanceLeft = styled.div`
+  margin: 0 10px;
+
   @media (max-width: 991px) {
     margin: 0 20px;
   }
@@ -35,7 +37,7 @@ export const FinanceHeading = styled.div`
   max-width: 565px;
   width: 100%;
   margin: 0 0 40px;
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 51px;
   font-weight: bold;
   line-height: 72px;
@@ -55,6 +57,13 @@ export const FinanceHeading = styled.div`
     height: 68px;
     z-index: -1;
     background: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
+
+    @media (max-width: 991px) {
+      max-width: 288px;
+      width: 100%;
+      height: 46px;
+      top: -12px;
+    }
   }
 
   @media (max-width: 991px) {
@@ -63,20 +72,13 @@ export const FinanceHeading = styled.div`
     font-weight: bold;
     line-height: 31px;
     letter-spacing: -0.3px;
-
-    &::after {
-      max-width: 288px;
-      width: 100%;
-      height: 46px;
-      top: -12px;
-    }
   }
 `;
 
 export const FinanceDescription = styled.div`
   max-width: 565px;
   width: 100%;
-  font-family: 'Nunito-Regular';
+  font-family: Nunito-Regular;
   font-size: 18px;
   line-height: 31px;
   letter-spacing: -0.18px;
@@ -94,14 +96,14 @@ export const FinanceButton = styled.div`
   position: relative;
   width: 100%;
   max-width: 210px;
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 12px;
   margin: 50px 0 20px;
   padding: 10px 20px;
-  font-family: 'Nunito-Bold';
+  font-family: Nunito-Bold;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -0.18px;
@@ -117,10 +119,14 @@ export const FinanceButton = styled.div`
 
   @media (max-width: 991px) {
     margin: 46px 0 0 0;
+    height: 30px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 150px;
   }
 `;
 
-export const FinanceRightInner = styled.div`
+export const FinanceRight = styled.div`
   @media (max-width: 991px) {
     margin: 0 20px;
   }
@@ -140,7 +146,7 @@ export const FinanceRightHeading = styled.div`
   position: relative;
   padding: 0 0 0 70px;
   margin: 0 0 40px 0;
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 29px;
   font-weight: bold;
   line-height: 44px;
@@ -157,17 +163,17 @@ export const FinanceRightHeading = styled.div`
     max-width: 50px;
     width: 100%;
     background: #3b3b3c;
+
+    @media (max-width: 991px) {
+      max-width: 30px;
+      width: 100%;
+    }
   }
 
   @media (max-width: 991px) {
     font-size: 17px;
     margin: 40px 0 20px;
     padding: 0 0 0 50px;
-
-    &::before {
-      max-width: 30px;
-      width: 100%;
-    }
   }
 `;
 
@@ -179,6 +185,10 @@ export const FinanceImagePortion = styled.div`
   @media (max-width: 1199px) {
     padding: 20px;
     margin: 0 40px 0 0;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0;
   }
 `;
 
@@ -219,7 +229,7 @@ export const RightInnerImageDescription = styled.div`
   margin: 40px 0 0;
   max-width: 350px;
   width: 100%;
-  font-family: 'Nunito-Regular';
+  font-family: Nunito-Regular;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.16px;
@@ -229,5 +239,6 @@ export const RightInnerImageDescription = styled.div`
   @media (max-width: 991px) {
     font-size: 12px;
     line-height: 21px;
+    margin: 10px 0 0;
   }
 `;

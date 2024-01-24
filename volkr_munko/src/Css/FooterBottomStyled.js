@@ -33,7 +33,7 @@ export const FooterBottomInnerPart = styled.div`
 export const LeftInner = styled.div``;
 
 export const CopyRightText = styled.div`
-  font-family: 'Nunito-regular';
+  font-family: Nunito-Regular;
   font-size: 16px;
   line-height: 20px;
   color: #fff;
@@ -70,7 +70,7 @@ export const RightInnerLi = styled.div`
   }
 `;
 export const FooterText = styled.div`
-  font-family: 'Nunito-regular';
+  font-family: Nunito-Regular;
   font-size: 16px;
   line-height: 20px;
   color: #fff;

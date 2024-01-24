@@ -3,16 +3,16 @@ import {
   BannerSection,
   Container,
   BannerSectionInnerPart,
-  BannerLeftInnerPart,
+  BannerLeft,
   BannerData,
-  BannerRightInnerPart,
+  BannerRight,
   RightInnerImage,
   BannerHeading,
   BannerDescription,
   BannerButton,
   BannerButtonHide,
 } from '../css/BannerStyled';
-import img from '../assests/Banner.png';
+import BannerImage from '../assets/banner.png';
 import Navbar from '../Components/Navbar';
 
 const Banner = () => {
@@ -22,7 +22,7 @@ const Banner = () => {
       <BannerSection>
         <BannerSectionInnerPart>
           <Container>
-            <BannerLeftInnerPart>
+            <BannerLeft>
               <BannerData>
                 <BannerHeading>Asset Management</BannerHeading>
                 <BannerDescription>
@@ -33,13 +33,13 @@ const Banner = () => {
                 </BannerDescription>
                 <BannerButton>Contact Us</BannerButton>
                 <RightInnerImage>
-                  <img src={img} alt="bannerimg" />
+                  <img src={BannerImage} alt="banner" />
                 </RightInnerImage>
               </BannerData>
-            </BannerLeftInnerPart>
-            <BannerRightInnerPart>
+            </BannerLeft>
+            <BannerRight>
               <BannerButtonHide>Contact Us</BannerButtonHide>
-            </BannerRightInnerPart>
+            </BannerRight>
           </Container>
         </BannerSectionInnerPart>
       </BannerSection>

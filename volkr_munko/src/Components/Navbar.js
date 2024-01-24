@@ -12,7 +12,7 @@ import {
   MobileHideButton,
   MobileOpen,
 } from '../css/NavbarStyled';
-import img from '../assests/VmLogo_navbar.png';
+import navbarLogo from '../assets/vmLogo_navbar.png';
 import { FiAlignJustify } from 'react-icons/fi';
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
           <NavbarInner>
             <NavbarLeft>
               <LeftLogo>
-                <img src={img} alt="vmlogo" />
+                <img src={navbarLogo} alt="vmlogo" />
               </LeftLogo>
             </NavbarLeft>
             <NavbarRight>

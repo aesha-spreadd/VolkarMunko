@@ -6,6 +6,7 @@ import {
   LeftInner,
   RightInner,
   WealthManagementLeftData,
+  WealthManagementRightData,
   WealthManagementHeading,
   WealthManagementContent,
   WealthManagementLiDetails,
@@ -13,7 +14,7 @@ import {
   WealthManagementDescription,
   WealthManagementRightContent,
 } from '../css/WealthManagementStyled';
-import img from '../assests/CheckIcon.png';
+import checkIcon from '../assets/checkIcon.png';
 
 const WealthManagement = ({ data }) => {
   return (
@@ -28,10 +29,10 @@ const WealthManagement = ({ data }) => {
                 </WealthManagementHeading>
                 <WealthManagementContent>
                   {Array.isArray(data) &&
-                    data.map((item, index) => (
+                    data.slice(0, 7).map((item, index) => (
                       <WealthManagementLiDetails key={index}>
                         <WealthManagementIcon>
-                          <img src={img} alt="checkimage" />
+                          <img src={checkIcon} alt="checkmark" />
                         </WealthManagementIcon>
                         <WealthManagementDescription>
                           {item}
@@ -42,14 +43,13 @@ const WealthManagement = ({ data }) => {
               </WealthManagementLeftData>
             </LeftInner>
             <RightInner>
-              <WealthManagementLeftData>
+              <WealthManagementRightData>
                 <WealthManagementRightContent>
                   {Array.isArray(data) &&
-                    data.length > 5 &&
-                    data.slice(5).map((item, index) => (
+                    data.slice(0, 4).map((item, index) => (
                       <WealthManagementLiDetails key={index}>
                         <WealthManagementIcon>
-                          <img src={img} alt="checkimage" />
+                          <img src={checkIcon} alt="checkmark" />
                         </WealthManagementIcon>
                         <WealthManagementDescription>
                           {item}
@@ -57,7 +57,7 @@ const WealthManagement = ({ data }) => {
                       </WealthManagementLiDetails>
                     ))}
                 </WealthManagementRightContent>
-              </WealthManagementLeftData>
+              </WealthManagementRightData>
             </RightInner>
           </WealthManagementInnerPart>
         </Container>

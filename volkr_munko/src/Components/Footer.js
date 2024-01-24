@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../assests/VM_LOGO.png';
+import VmLogo from '../assets/vmLogo.png';
 import {
   FooterSection,
   Container,
@@ -18,7 +18,7 @@ const Footer = () => {
           <Container>
             <FooterSectionInnerPart>
               <FooterSectionLogo>
-                <img src={img} alt="volkar munko" />
+                <img src={VmLogo} alt="volkar-munko" />
               </FooterSectionLogo>
               <FooterDescription>
                 It is a long established fact that a reader will be distracted

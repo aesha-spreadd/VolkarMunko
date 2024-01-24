@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import productBg from '../assests/productbackground.png';
-import productFooterBg from '../assests/productfooterbg.png';
+import productBg from '../assets/bg-product.png';
+import productFooterBg from '../assets/bg-productfooter.png';
 
 export const ProductSection = styled.div`
   background: #fbfbfb;
@@ -19,6 +19,10 @@ export const ProductSection = styled.div`
     position: absolute;
     top: -78px;
     z-index: 1;
+
+    @media (max-width: 575px) {
+      top: -42px;
+    }
   }
 
   @media (max-width: 991px) {
@@ -42,6 +46,13 @@ export const Container = styled.div`
     bottom: -150px;
     left: 0;
     z-index: 1;
+
+    @media (max-width: 767px) {
+      height: 200px;
+      bottom: -38px;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   @media (max-width: 1199px) {
@@ -59,7 +70,7 @@ export const ProductHeading = styled.div`
 `;
 
 export const ProductMainHeading = styled.div`
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 52px;
   font-weight: bold;
   line-height: 76px;
@@ -67,13 +78,13 @@ export const ProductMainHeading = styled.div`
   color: #14183e;
   margin: 0 0 30px 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 22px;
   }
 `;
 
 export const ProductDescription = styled.div`
-  font-family: 'Nunito-Regular';
+  font-family: Nunito-Regular;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: -0.17px;
@@ -81,7 +92,7 @@ export const ProductDescription = styled.div`
   text-align: center;
   margin: 0 0 40px 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 12px;
   }
 `;
@@ -98,7 +109,11 @@ export const ProductButtons = styled.div`
   border: solid 1px #eee0e4;
   background-color: #fff;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1199px) {
+    margin: 0;
+  }
+
+  @media (max-width: 767px) {
     display: none;
   }
 `;
@@ -113,20 +128,14 @@ export const PrivateCustomerButton = styled.div`
   box-shadow: 0 3px 6px 0 #00000008;
   z-index: 1;
   background-color: #424244;
-
-  @media (max-width: 768px) {
-    max-width: 40px;
-    width: 100%;
-    height: 32px;
-  }
 `;
 
 export const PrivateCustomerButtonText = styled.div`
   max-width: 500px;
   width: 100%;
   height: 26px;
-  margin: -4px 0 0 13px;
-  font-family: 'Quicksand-Bold';
+  margin: -6px 0 0 13px;
+  font-family: Quicksand-Bold;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
@@ -134,11 +143,6 @@ export const PrivateCustomerButtonText = styled.div`
   text-align: center;
   color: #fff;
   z-index: 1;
-
-  @media (max-width: 768px) {
-    font-size: 12px;
-    margin: -24px 0 0 -64px;
-  }
 `;
 
 export const PrivateCustomerButtonIcon = styled.div`
@@ -148,15 +152,6 @@ export const PrivateCustomerButtonIcon = styled.div`
 
   img {
     margin: 20px 0 0 0;
-  }
-
-  @media (max-width: 768px) {
-    img {
-      margin: -30px 0 -10px -36px;
-      max-width: 16px;
-      width: 100%;
-      height: 20px;
-    }
   }
 `;
 
@@ -171,15 +166,6 @@ export const GroupButtonIcon = styled.div`
   img {
     margin: 20px 0 0 0;
   }
-
-  @media (max-width: 768px) {
-    img {
-      margin: 6px 0 0 -32px;
-      max-width: 16px;
-      width: 100%;
-      height: 18px;
-    }
-  }
 `;
 
 export const GroupButtonText = styled.div`
@@ -187,18 +173,13 @@ export const GroupButtonText = styled.div`
   width: 100%;
   height: 26px;
   margin: -4px 0 0 28px;
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: -0.21px;
   text-align: center;
   color: #14183e;
-
-  @media (max-width: 768px) {
-    font-size: 12px;
-    margin: -20px 0 0 -64px;
-  }
 `;
 
 export const ProductsInnerCard = styled.div`
@@ -210,7 +191,7 @@ export const ProductsInnerCard = styled.div`
     justify-content: space-around;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     justify-content: center;
     gap: 20px;
   }
@@ -237,6 +218,8 @@ export const ProductInnerCardDetails = styled.div`
 
   @media (max-width: 991px) {
     margin: 30px 0 0 -5px;
+    max-width: 300px;
+    width: 100%;
   }
 `;
 
@@ -277,6 +260,10 @@ export const ProductCardIButton = styled.div`
     width: 100%;
     height: 30px;
   }
+
+  @media (max-width: 991px) {
+    left: 278px;
+  }
 `;
 
 export const ProductCardIcon = styled.div`
@@ -291,13 +278,17 @@ export const ProductCardText = styled.div`
   width: 100%;
   height: 101px;
   margin: 44px 0 46px 0;
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 26px;
   font-weight: bold;
   line-height: 34px;
   letter-spacing: -0.26px;
   text-align: center;
   color: #14183e;
+
+  @media (max-width: 767px) {
+    margin: 44px 10px 46px 0;
+  }
 `;
 
 export const ProductCardButton = styled.div`
@@ -306,7 +297,7 @@ export const ProductCardButton = styled.div`
   height: 50px;
   margin: 50px;
   border-radius: 10px;
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 16px;
   font-weight: bold;
   line-height: 80px;
@@ -323,12 +314,28 @@ export const ProductBackDescription = styled.div`
   width: 100%;
   max-height: 450px;
   height: auto;
-  margin: -70px 0 0 26px;
-  padding: 150px 26px 10px 20px;
-  font-family: 'Nunito-Regular';
+  padding: 50px 26px 10px 20px;
+  font-family: Nunito-Regular;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.14px;
   text-align: left;
   color: #fff;
+`;
+
+export const ProductCardIButtonBackCard = styled.div`
+  position: absolute;
+  top: 18px;
+  left: 326px;
+  transform: translateX(-50%);
+
+  img {
+    max-width: 30px;
+    width: 100%;
+    height: 30px;
+  }
+
+  @media (max-width: 991px) {
+    left: 278px;
+  }
 `;

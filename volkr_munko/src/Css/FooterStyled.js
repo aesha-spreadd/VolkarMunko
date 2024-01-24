@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import img from '../assests/Footer.png';
+import footerBg from '../assets/bg-footer.png';
 
 export const FooterSection = styled.div`
-  background: url(${img}) no-repeat;
+  background: url(${footerBg}) no-repeat;
   background-position: center top;
   background-size: cover;
   max-height: 500px;
@@ -28,15 +28,12 @@ export const FooterSectionLogo = styled.div`
     max-width: 188px;
     width: 100%;
     height: 112px;
-    margin: 0 588px 38px 588px;
-  }
+    margin: 0 0 38px;
 
-  @media (max-width: 768px) {
-    img {
+    @media (max-width: 767px) {
       max-width: 110px;
       width: 100%;
       height: 66px;
-      margin: 0 132px 18px 130px;
     }
   }
 `;
@@ -44,15 +41,15 @@ export const FooterSectionLogo = styled.div`
 export const FooterDescription = styled.div`
   max-height: 57px;
   height: auto;
-  margin: 0 112px;
+  margin: 0 100px;
   text-align: center;
-  font-family: 'Nunito-Regular';
+  font-family: Nunito-Regular;
   font-size: 16px;
   line-height: 36px;
   letter-spacing: -0.16px;
   color: #fff;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     height: 72px;
     margin: 0 20px;
     font-size: 12px;
@@ -64,5 +61,5 @@ export const FooterDescription = styled.div`
 `;
 
 export const FooterTop = styled.div`
-  padding: 124px 0 60px;
+  padding: 90px 0;
 `;

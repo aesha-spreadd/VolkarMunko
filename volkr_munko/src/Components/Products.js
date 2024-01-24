@@ -17,14 +17,15 @@ import {
   ProductInnerCardDetails,
   ProductCardText,
   ProductCardIButton,
+  ProductCardIButtonBackCard,
   ProductCardButton,
   ProductCardIcon,
   FrontCard,
   BackCard,
   ProductBackDescription,
 } from '../css/ProductsStyled';
-import img from '../assests/manicon.png';
-import groupIcon from '../assests/GroupIcon.png';
+import manIcon from '../assets/manIcon.png';
+import groupIcon from '../assets/groupIcon.png';
 
 const Products = ({ data }) => {
   return (
@@ -43,7 +44,7 @@ const Products = ({ data }) => {
               <ProductButtons>
                 <PrivateCustomerButton>
                   <PrivateCustomerButtonIcon>
-                    <img src={img} alt="man" />
+                    <img src={manIcon} alt="man" />
                   </PrivateCustomerButtonIcon>
                   <PrivateCustomerButtonText>
                     Private Customer
@@ -66,15 +67,15 @@ const Products = ({ data }) => {
                         <img src={card.ibuttonSrc} alt="ibutton" />
                       </ProductCardIButton>
                       <ProductCardIcon>
-                        <img src={card.iconSrc} alt="iconbutton" />
+                        <img src={card.iconSrc} alt="checkmark" />
                       </ProductCardIcon>
                       <ProductCardText>{card.text}</ProductCardText>
                       <ProductCardButton>{card.buttonText}</ProductCardButton>
                     </FrontCard>
                     <BackCard>
-                      <ProductCardIButton>
+                      <ProductCardIButtonBackCard>
                         <img src={card.ibuttonSrc} alt="ibutton" />
-                      </ProductCardIButton>
+                      </ProductCardIButtonBackCard>
                       <ProductBackDescription>
                         It is a long established fact that a reader will be
                         distracted by the readable content of a page when

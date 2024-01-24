@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  FinanceLeftInner,
-  FinanceRightInner,
+  FinanceLeft,
+  FinanceRight,
   FinanceSection,
   FinanceSectionInnerPart,
   Container,
@@ -17,8 +17,8 @@ import {
   FinanceImageInner,
   RightInnerImageDescription,
 } from '../css/FinanceStyled';
-import img from '../assests/FianceImage.jpg';
-import imgtwo from '../assests/FianceImageTwo.jpg';
+import Handelsblatt from '../assets/fianceImage.jpg';
+import Exzellent from '../assets/fianceImageExzellent.jpg';
 
 const Finance = () => {
   return (
@@ -26,7 +26,7 @@ const Finance = () => {
       <FinanceSection>
         <Container>
           <FinanceSectionInnerPart>
-            <FinanceLeftInner>
+            <FinanceLeft>
               <FinanceHeading>Competence for your finances</FinanceHeading>
               <FinanceDescription>
                 It is a long established fact that a reader will be distracted
@@ -36,19 +36,19 @@ const Finance = () => {
                 here, content here', making it look like readable English
               </FinanceDescription>
               <FinanceButton>Contact Us</FinanceButton>
-            </FinanceLeftInner>
-            <FinanceRightInner>
+            </FinanceLeft>
+            <FinanceRight>
               <FinanceRightMainHeading>
                 <FinanceRightHeading> EXCELLENT ADVICE</FinanceRightHeading>
               </FinanceRightMainHeading>
               <FinanceImagePortion>
                 <FinanceImageInner>
                   <FinanceImages>
-                    <img src={img} alt="fianceimage" />
+                    <img src={Handelsblatt} alt="finance" />
                   </FinanceImages>
                   <ImageDivider />
                   <FinanceImagesTwo>
-                    <img src={imgtwo} alt="fianceimage" />
+                    <img src={Exzellent} alt="finance" />
                   </FinanceImagesTwo>
                 </FinanceImageInner>
                 <RightInnerImageDescription>
@@ -56,7 +56,7 @@ const Finance = () => {
                   quality in customer advice and service.
                 </RightInnerImageDescription>
               </FinanceImagePortion>
-            </FinanceRightInner>
+            </FinanceRight>
           </FinanceSectionInnerPart>
         </Container>
       </FinanceSection>

@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import NunitoBlack from './font/Nunito/static/Nunito-Black.ttf';
 import NunitoBold from './font/Nunito/static/Nunito-Bold.ttf';
 import NunitoRegular from './font/Nunito/static/Nunito-Regular.ttf';
@@ -14,6 +14,7 @@ body{
   margin: 4px;
   padding: 0;
   background:#ffffff;
+  overflow-x: hidden;
 }
 
   @font-face {

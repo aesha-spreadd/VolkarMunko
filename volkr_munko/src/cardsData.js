@@ -1,5 +1,5 @@
-import ibutton from './assests/information-button.png';
-import icon from './assests/icon.png';
+import ibutton from './assets/information-button.png';
+import icon from './assets/icon.png';
 
 export const cardData = [
   {
@@ -72,6 +72,4 @@ export const wealthManagementData = [
   'How can I save more without giving up a good life?',
   'What alternatives are there to the savings book? Is my money well spent?',
   'How can I use government funding?',
-  'What alternatives are there to the savings book? Is my money well spent?',
-  'How can I protect my money from inflation?',
 ];

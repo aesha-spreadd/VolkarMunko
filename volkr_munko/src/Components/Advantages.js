@@ -3,18 +3,18 @@ import {
   AdvantagesInnerPart,
   AdvantagesSection,
   Container,
-  AdvantageLeftInner,
-  AdvantageRightInner,
+  AdvantageLeft,
+  AdvantageRight,
   LeftImage,
   AdvantagesContent,
-  AdvantagesDecription,
+  AdvantagesDescription,
   AdvantageHeading,
   AdvantageUlContent,
   AdvantageLiDetails,
   LiNumber,
   LiContent,
 } from '../css/AdvantagesStyled';
-import advantagesimage from '../assests/advantagesimage.png';
+import advantageImage from '../assets/advantagesImage.png';
 
 const Advantages = ({ data }) => {
   return (
@@ -22,17 +22,17 @@ const Advantages = ({ data }) => {
       <AdvantagesSection>
         <Container>
           <AdvantagesInnerPart>
-            <AdvantageLeftInner>
+            <AdvantageLeft>
               <LeftImage>
-                <img src={advantagesimage} alt="advantageImage" />
+                <img src={advantageImage} alt="advantage" />
               </LeftImage>
-            </AdvantageLeftInner>
-            <AdvantageRightInner>
+            </AdvantageLeft>
+            <AdvantageRight>
               <AdvantagesContent>
                 <AdvantageHeading>Your advantages at a glance</AdvantageHeading>
-                <AdvantagesDecription>
+                <AdvantagesDescription>
                   It is a long established fact that a reader will be distracted
-                </AdvantagesDecription>
+                </AdvantagesDescription>
                 <AdvantageUlContent>
                   {Array.isArray(data) &&
                     data.map((advantage, index) => (
@@ -43,7 +43,7 @@ const Advantages = ({ data }) => {
                     ))}
                 </AdvantageUlContent>
               </AdvantagesContent>
-            </AdvantageRightInner>
+            </AdvantageRight>
           </AdvantagesInnerPart>
         </Container>
       </AdvantagesSection>

@@ -3,8 +3,8 @@ import {
   Container,
   ContactSection,
   ContactSectionInnerPart,
-  LeftInnerPart,
-  RightInnerPart,
+  LeftInner,
+  RightInner,
   LeftInnerMap,
   MapContent,
   ContactArea,
@@ -13,12 +13,12 @@ import {
   ContactContent,
   ContactDetails,
   ContactIcon,
-  ContactDetailsofIcon,
+  ContactDetailsOfIcon,
 } from '../css/ContactStyled';
-import img from '../assests/mapicon.png';
-import calliconimg from '../assests/CallIicon.png';
-import emailicon from '../assests/emailIcon.png';
-import contacctmap from '../assests/contactMap.png';
+import map from '../assets/mapIcon.png';
+import call from '../assets/callIcon.png';
+import email from '../assets/emailIcon.png';
+import contact from '../assets/contactMap.png';
 
 const Contact = () => {
   return (
@@ -26,10 +26,10 @@ const Contact = () => {
       <ContactSection>
         <Container>
           <ContactSectionInnerPart>
-            <LeftInnerPart>
+            <LeftInner>
               <LeftInnerMap>
                 <MapContent>
-                  <img src={contacctmap} alt="map" />
+                  <img src={contact} alt="map" />
                   <iframe
                     title="Google Map"
                     width="480"
@@ -40,42 +40,42 @@ const Contact = () => {
                   ></iframe>
                 </MapContent>
               </LeftInnerMap>
-            </LeftInnerPart>
-            <RightInnerPart>
+            </LeftInner>
+            <RightInner>
               <ContactArea>
                 <ContactAreaHeading>Contact</ContactAreaHeading>
                 <ContactAreaCompanyName>Volker Munko</ContactAreaCompanyName>
                 <ContactDetails>
                   <ContactContent>
                     <ContactIcon>
-                      <img src={img} alt="google-map" />
+                      <img src={map} alt="google-map" />
                     </ContactIcon>
-                    <ContactDetailsofIcon>
+                    <ContactDetailsOfIcon>
                       Office for Allfinanz German investment advice On the heath
                       8 32602 Vlotho
-                    </ContactDetailsofIcon>
+                    </ContactDetailsOfIcon>
                   </ContactContent>
                   <ContactContent>
                     <ContactIcon>
-                      <img src={calliconimg} alt="call" />
+                      <img src={call} alt="call" />
                     </ContactIcon>
-                    <ContactDetailsofIcon>
-                      <a href="tel:(0049)176/23148867">05733 881883 </a>
-                    </ContactDetailsofIcon>
+                    <ContactDetailsOfIcon>
+                      <a href="tel:(0049)176/23148867">(0049)176/23148867 </a>
+                    </ContactDetailsOfIcon>
                   </ContactContent>
                   <ContactContent>
                     <ContactIcon>
-                      <img src={emailicon} alt="email" />
+                      <img src={email} alt="email" />
                     </ContactIcon>
-                    <ContactDetailsofIcon>
-                      <a href="mailto:paesha61@gmail.com">
+                    <ContactDetailsOfIcon>
+                      <a href="mailto:volker.munko@allfinanz.ag">
                         Volker.Munko@allfinanz.ag
                       </a>
-                    </ContactDetailsofIcon>
+                    </ContactDetailsOfIcon>
                   </ContactContent>
                 </ContactDetails>
               </ContactArea>
-            </RightInnerPart>
+            </RightInner>
           </ContactSectionInnerPart>
         </Container>
       </ContactSection>

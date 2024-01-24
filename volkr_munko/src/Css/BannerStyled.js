@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../assests/Banner.png';
+import banner from '../assets/banner.png';
 
 export const BannerSection = styled.div`
   overflow: hidden;
@@ -15,7 +15,7 @@ export const BannerSection = styled.div`
 `;
 
 export const BannerSectionInnerPart = styled.div`
-  background: url(${img}) no-repeat;
+  background: url(${banner}) no-repeat;
   background-size: 660px 640px;
   background-position: right 20px bottom 10px;
   height: 650px;
@@ -39,7 +39,7 @@ export const Container = styled.div`
   }
 `;
 
-export const BannerLeftInnerPart = styled.div`
+export const BannerLeft = styled.div`
   max-width: 48%;
   width: 100%;
 
@@ -53,13 +53,14 @@ export const BannerHeading = styled.div`
   max-width: 565px;
   width: 100%;
   margin: 60px 0 40px;
-  font-family: 'Quicksand-Bold';
+  font-family: Quicksand-Bold;
   font-size: 54px;
   font-weight: bold;
   line-height: 79px;
   letter-spacing: -0.56px;
   text-align: left;
   color: #14183e;
+  z-index: 1;
 
   &::after {
     content: '';
@@ -71,6 +72,12 @@ export const BannerHeading = styled.div`
     height: 68px;
     z-index: -1;
     background: linear-gradient(to bottom, #f8e9ed, #fbfbfb);
+
+    @media (max-width: 991px) {
+      max-width: 368px;
+      width: 100%;
+      top: 12px;
+    }
   }
 
   @media (max-width: 991px) {
@@ -78,12 +85,6 @@ export const BannerHeading = styled.div`
     line-height: 79px;
     margin: 40px 0 0 0;
     height: auto;
-
-    &::after {
-      max-width: 368px;
-      width: 100%;
-      top: 12px;
-    }
   }
 `;
 
@@ -91,7 +92,7 @@ export const BannerDescription = styled.div`
   max-width: 565px;
   width: 100%;
   margin: 0 0 40px 0;
-  font-family: 'Nunito-Regular';
+  font-family: Nunito-Regular;
   font-size: 18px;
   line-height: 31px;
   letter-spacing: -0.18px;
@@ -111,7 +112,7 @@ export const BannerButton = styled.div`
   padding: 14px 48px;
   border-radius: 10px;
   height: 22px;
-  font-family: 'Nunito-Regular';
+  font-family: Nunito-Regular;
   font-size: 18px;
   line-height: 10px;
   font-weight: 400;
@@ -132,7 +133,7 @@ export const BannerButton = styled.div`
   }
 `;
 
-export const BannerRightInnerPart = styled.div`
+export const BannerRight = styled.div`
   max-width: 48%;
   width: 100%;
 
@@ -155,7 +156,7 @@ export const BannerButtonHide = styled.div`
     height: auto;
     padding: 0 28px;
     border-radius: 10px;
-    font-family: 'Nunito-Regular';
+    font-family: Nunito-Regular;
     font-size: 14px;
     font-weight: 500;
     line-height: 62px;
@@ -187,7 +188,5 @@ export const RightInnerImage = styled.div`
 `;
 
 export const BannerData = styled.div`
-  @media (max-width: 991px) {
-    margin: 0 10px;
-  }
+  margin: 0 10px;
 `;
