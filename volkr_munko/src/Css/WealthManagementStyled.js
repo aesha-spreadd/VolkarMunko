@@ -57,7 +57,7 @@ export const WealthManagementInnerPart = styled.div`
   }
 `;
 
-export const LeftInner = styled.div`
+export const WealthManagementLeft = styled.div`
   max-width: 530px;
   width: 100%;
 
@@ -66,7 +66,7 @@ export const LeftInner = styled.div`
   }
 `;
 
-export const RightInner = styled.div`
+export const WealthManagementRight = styled.div`
   max-width: 500px;
   width: 100%;
   margin: 0 0 0 30px;

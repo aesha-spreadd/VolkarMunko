@@ -24,7 +24,7 @@ export const ContactSectionInnerPart = styled.div`
   }
 `;
 
-export const LeftInner = styled.div`
+export const ContactLeft = styled.div`
   max-width: 500px;
   width: 100%;
   position: relative;
@@ -62,13 +62,12 @@ export const LeftInnerMap = styled.div`
     }
 
     @media (max-width: 575px) {
-      top: 215px;
-      right: 160px;
+      display: none;
     }
   }
 `;
 
-export const RightInner = styled.div`
+export const ContactRight = styled.div`
   max-width: 500px;
   width: 100%;
   margin: 0 0 0 30px;

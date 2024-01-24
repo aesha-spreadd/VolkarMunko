@@ -3,8 +3,8 @@ import {
   Container,
   ContactSection,
   ContactSectionInnerPart,
-  LeftInner,
-  RightInner,
+  ContactLeft,
+  ContactRight,
   LeftInnerMap,
   MapContent,
   ContactArea,
@@ -26,7 +26,7 @@ const Contact = () => {
       <ContactSection>
         <Container>
           <ContactSectionInnerPart>
-            <LeftInner>
+            <ContactLeft>
               <LeftInnerMap>
                 <MapContent>
                   <img src={contact} alt="map" />
@@ -40,8 +40,8 @@ const Contact = () => {
                   ></iframe>
                 </MapContent>
               </LeftInnerMap>
-            </LeftInner>
-            <RightInner>
+            </ContactLeft>
+            <ContactRight>
               <ContactArea>
                 <ContactAreaHeading>Contact</ContactAreaHeading>
                 <ContactAreaCompanyName>Volker Munko</ContactAreaCompanyName>
@@ -75,7 +75,7 @@ const Contact = () => {
                   </ContactContent>
                 </ContactDetails>
               </ContactArea>
-            </RightInner>
+            </ContactRight>
           </ContactSectionInnerPart>
         </Container>
       </ContactSection>

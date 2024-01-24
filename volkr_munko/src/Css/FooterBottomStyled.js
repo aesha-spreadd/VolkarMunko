@@ -30,7 +30,7 @@ export const FooterBottomInnerPart = styled.div`
   }
 `;
 
-export const LeftInner = styled.div``;
+export const FooterBottomLeft = styled.div``;
 
 export const CopyRightText = styled.div`
   font-family: Nunito-Regular;
@@ -44,7 +44,7 @@ export const CopyRightText = styled.div`
   }
 `;
 
-export const RightInner = styled.div``;
+export const FooterBottomRight = styled.div``;
 
 export const RightInnerUl = styled.div`
   display: flex;

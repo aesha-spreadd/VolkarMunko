@@ -3,8 +3,8 @@ import {
   WealthManagementSection,
   Container,
   WealthManagementInnerPart,
-  LeftInner,
-  RightInner,
+  WealthManagementLeft,
+  WealthManagementRight,
   WealthManagementLeftData,
   WealthManagementRightData,
   WealthManagementHeading,
@@ -22,7 +22,7 @@ const WealthManagement = ({ data }) => {
       <WealthManagementSection>
         <Container>
           <WealthManagementInnerPart>
-            <LeftInner>
+            <WealthManagementLeft>
               <WealthManagementLeftData>
                 <WealthManagementHeading>
                   Wealth management consulting with a seal of approval in Vlotho
@@ -41,8 +41,8 @@ const WealthManagement = ({ data }) => {
                     ))}
                 </WealthManagementContent>
               </WealthManagementLeftData>
-            </LeftInner>
-            <RightInner>
+            </WealthManagementLeft>
+            <WealthManagementRight>
               <WealthManagementRightData>
                 <WealthManagementRightContent>
                   {Array.isArray(data) &&
@@ -58,7 +58,7 @@ const WealthManagement = ({ data }) => {
                     ))}
                 </WealthManagementRightContent>
               </WealthManagementRightData>
-            </RightInner>
+            </WealthManagementRight>
           </WealthManagementInnerPart>
         </Container>
       </WealthManagementSection>

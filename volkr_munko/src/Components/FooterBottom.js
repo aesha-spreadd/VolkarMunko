@@ -3,8 +3,8 @@ import {
   FooterBottomSection,
   Container,
   FooterBottomInnerPart,
-  LeftInner,
-  RightInner,
+  FooterBottomLeft,
+  FooterBottomRight,
   CopyRightText,
   RightInnerUl,
   RightInnerLi,
@@ -17,10 +17,10 @@ const FooterBottom = () => {
       <FooterBottomSection>
         <Container>
           <FooterBottomInnerPart>
-            <LeftInner>
+            <FooterBottomLeft>
               <CopyRightText>@2021 Volker Munko</CopyRightText>
-            </LeftInner>
-            <RightInner>
+            </FooterBottomLeft>
+            <FooterBottomRight>
               <RightInnerUl>
                 <RightInnerLi>
                   <FooterText>Data protection</FooterText>
@@ -32,7 +32,7 @@ const FooterBottom = () => {
                   <FooterText>Cookie Policy</FooterText>
                 </RightInnerLi>
               </RightInnerUl>
-            </RightInner>
+            </FooterBottomRight>
           </FooterBottomInnerPart>
         </Container>
       </FooterBottomSection>
