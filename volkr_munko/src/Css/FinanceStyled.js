@@ -180,7 +180,7 @@ export const FinanceRightHeading = styled.div`
 export const FinanceImagePortion = styled.div`
   padding: 40px;
   border-radius: 23px;
-  border: solid 1px #cfcfcf;
+  border: 1px solid #cfcfcf;
 
   @media (max-width: 1199px) {
     padding: 20px;

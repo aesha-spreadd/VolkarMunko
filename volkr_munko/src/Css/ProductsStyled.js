@@ -106,7 +106,7 @@ export const ProductButtons = styled.div`
   padding: 0 66px 0 0;
   border-radius: 36px;
   box-shadow: 0 3px 6px 0 #00000008;
-  border: solid 1px #eee0e4;
+  border: 1px solid #eee0e4;
   background-color: #fff;
 
   @media (max-width: 1199px) {
@@ -204,7 +204,7 @@ export const ProductInnerCardDetails = styled.div`
   padding: 10px;
   position: relative;
   border-radius: 20px;
-  border: solid 1px #e9e5e5;
+  border: 1px solid #e9e5e5;
   background-color: #fff;
   margin: 30px 0 0 -28px;
   transition: transform 0.5s;
