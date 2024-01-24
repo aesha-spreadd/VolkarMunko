@@ -16,7 +16,7 @@ export const AdvantagesInnerPart = styled.div`
   justify-content: space-between;
   align-items: center;
   border-radius: 24px;
-  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 40px 0 #0000001a;
   max-height: 590px;
   height: auto;
 

@@ -10,7 +10,6 @@ import {
   FinanceButton,
   FinanceRightMainHeading,
   FinanceRightHeading,
-  HeadingDivider,
   FinanceImagePortion,
   FinanceImages,
   FinanceImagesTwo,
@@ -18,7 +17,6 @@ import {
   FinanceImageInner,
   RightInnerImageDescription,
 } from '../css/FinanceStyled';
-
 import img from '../assests/FianceImage.jpg';
 import imgtwo from '../assests/FianceImageTwo.jpg';
 

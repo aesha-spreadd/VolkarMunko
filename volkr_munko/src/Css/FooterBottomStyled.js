@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterBottomSection = styled.div`
-  border-top: 1px solid rgba(255, 255, 255, 0.23);
+  border-top: 1px solid #ffffff3b;
   padding: 40px 0;
 
   @media (max-width: 991px) {
@@ -61,7 +61,7 @@ export const RightInnerLi = styled.div`
   padding: 0 36px;
 
   &:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.23);
+    border-right: 1px solid #ffffff3b;
   }
 
   @media (max-width: 991px) {

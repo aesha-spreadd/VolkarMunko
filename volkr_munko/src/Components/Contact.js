@@ -15,7 +15,6 @@ import {
   ContactIcon,
   ContactDetailsofIcon,
 } from '../css/ContactStyled';
-
 import img from '../assests/mapicon.png';
 import calliconimg from '../assests/CallIicon.png';
 import emailicon from '../assests/emailIcon.png';

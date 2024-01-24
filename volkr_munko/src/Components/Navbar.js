@@ -12,9 +12,7 @@ import {
   MobileHideButton,
   MobileOpen,
 } from '../css/NavbarStyled';
-
 import img from '../assests/VmLogo_navbar.png';
-import navbaricon from '../assests/navbaricon.png';
 import { FiAlignJustify } from 'react-icons/fi';
 
 const Navbar = () => {

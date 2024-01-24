@@ -94,7 +94,7 @@ export const ProductButtons = styled.div`
   margin: 48px 2px 88px 124px;
   padding: 0 66px 0 0;
   border-radius: 36px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 3px 6px 0 #00000008;
   border: solid 1px #eee0e4;
   background-color: #fff;
 
@@ -110,7 +110,7 @@ export const PrivateCustomerButton = styled.div`
   margin: 0 60px 0 0;
   padding: 0 40px 0 72px;
   border-radius: 36px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 3px 6px 0 #00000008;
   z-index: 1;
   background-color: #424244;
 

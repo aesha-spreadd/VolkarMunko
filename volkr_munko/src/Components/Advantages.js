@@ -14,7 +14,6 @@ import {
   LiNumber,
   LiContent,
 } from '../css/AdvantagesStyled';
-
 import advantagesimage from '../assests/advantagesimage.png';
 
 const Advantages = ({ data }) => {
