@@ -44,7 +44,7 @@ const Products = ({ data }) => {
               <ProductButtons>
                 <PrivateCustomerButton>
                   <PrivateCustomerButtonIcon>
-                    <img src={manIcon} alt="man" />
+                    <img src={manIcon} alt="private-customer" />
                   </PrivateCustomerButtonIcon>
                   <PrivateCustomerButtonText>
                     Private Customer
@@ -52,7 +52,7 @@ const Products = ({ data }) => {
                 </PrivateCustomerButton>
                 <PrivateGroupButton>
                   <GroupButtonIcon>
-                    <img src={groupIcon} alt="group" />
+                    <img src={groupIcon} alt="group-customer" />
                   </GroupButtonIcon>
                   <GroupButtonText>Corporate Customers</GroupButtonText>
                 </PrivateGroupButton>
@@ -64,7 +64,7 @@ const Products = ({ data }) => {
                   <ProductInnerCardDetails key={index}>
                     <FrontCard>
                       <ProductCardIButton>
-                        <img src={card.ibuttonSrc} alt="moreinfo" />
+                        <img src={card.ibuttonSrc} alt="more-info" />
                       </ProductCardIButton>
                       <ProductCardIcon>
                         <img src={card.iconSrc} alt="checkmark" />
@@ -74,7 +74,7 @@ const Products = ({ data }) => {
                     </FrontCard>
                     <BackCard>
                       <ProductCardIButtonBackCard>
-                        <img src={card.ibuttonSrc} alt="moreinfo" />
+                        <img src={card.ibuttonSrc} alt="more-info" />
                       </ProductCardIButtonBackCard>
                       <ProductBackDescription>
                         It is a long established fact that a reader will be

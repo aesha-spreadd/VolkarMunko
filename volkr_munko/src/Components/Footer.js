@@ -18,7 +18,7 @@ const Footer = () => {
           <Container>
             <FooterSectionInnerPart>
               <FooterSectionLogo>
-                <img src={VolkarMunko} alt="volkarmunko" />
+                <img src={VolkarMunko} alt="volkar-munko" />
               </FooterSectionLogo>
               <FooterDescription>
                 It is a long established fact that a reader will be distracted

@@ -12,7 +12,6 @@ import {
   FinanceImagePortion,
   FinanceHandelsblatt,
   FinanceExzellent,
-  ImageDivider,
   FinanceImageInner,
   RightInnerImageDescription,
 } from '../css/FinanceStyled';
@@ -46,7 +45,6 @@ const Finance = () => {
                   <FinanceHandelsblatt>
                     <img src={Handelsblatt} alt="finance" />
                   </FinanceHandelsblatt>
-                  <ImageDivider />
                   <FinanceExzellent>
                     <img src={Exzellent} alt="finance" />
                   </FinanceExzellent>

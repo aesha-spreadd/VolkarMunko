@@ -51,7 +51,6 @@ export const LeftInnerMap = styled.div`
     right: 238px;
 
     @media (max-width: 991px) {
-      top: 214px;
       right: 288px;
     }
 

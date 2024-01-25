@@ -207,13 +207,6 @@ export const FinanceExzellent = styled.div`
   }
 `;
 
-export const ImageDivider = styled.div`
-  width: 1px;
-  height: 130px;
-  margin: 0 30px;
-  background: #cfcfcf;
-`;
-
 export const FinanceImageInner = styled.div`
   display: flex;
   justify-content: center;
