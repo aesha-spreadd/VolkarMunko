@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   FooterBottomSection,
-  Container,
   FooterBottomInnerPart,
   FooterBottomLeft,
   FooterBottomRight,
@@ -10,6 +9,7 @@ import {
   RightInnerLi,
   FooterText,
 } from '../css/FooterBottomStyled';
+import { Container } from '../GlobalStyles';
 
 const FooterBottom = () => {
   return (

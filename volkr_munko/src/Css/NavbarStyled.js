@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from '../theme';
 
 export const NavbarSection = styled.div`
   padding: 30px 0 0;
@@ -11,12 +12,6 @@ export const NavbarSection = styled.div`
   @media (max-width: 991px) {
     padding: 10px 0;
   }
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
 `;
 
 export const NavbarInner = styled.div`
@@ -81,7 +76,7 @@ export const MenuLi = styled.div`
   font-weight: 600;
   line-height: 12px;
   letter-spacing: -0.2px;
-  color: #3b3b3c;
+  color: ${theme.BlackMarlin};
   margin: 0 30px 0 0;
   white-space: nowrap;
 `;
@@ -91,11 +86,11 @@ export const MobileHideButton = styled.div`
   font-size: 16px;
   font-weight: bold;
   letter-spacing: -0.16px;
-  color: #3b3b3c;
+  color: ${theme.BlackMarlin};
   width: 100%;
   border-radius: 10px;
   padding: 12px 26px;
-  background: #ffffff;
+  background: ${theme.white};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +98,7 @@ export const MobileHideButton = styled.div`
 
   &:hover {
     background: radial-gradient(#767678, #3b3b3c);
-    color: #ffffff;
+    color: ${theme.white};
   }
 `;
 

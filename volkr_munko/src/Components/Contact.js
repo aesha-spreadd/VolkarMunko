@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Container,
   ContactSection,
   ContactSectionInnerPart,
   ContactLeft,
@@ -15,10 +14,11 @@ import {
   ContactIcon,
   ContactDetailsOfIcon,
 } from '../css/ContactStyled';
-import map from '../assets/mapIcon.png';
-import call from '../assets/callIcon.png';
-import email from '../assets/emailIcon.png';
-import contact from '../assets/contactMap.png';
+import map from '../assets/map-icon.png';
+import call from '../assets/call-icon.png';
+import email from '../assets/email-icon.png';
+import contact from '../assets/contact-map.png';
+import { Container } from '../GlobalStyles';
 
 const Contact = () => {
   return (

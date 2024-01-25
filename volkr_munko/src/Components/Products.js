@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   ProductSection,
-  Container,
   ProductsInner,
   ProductHeading,
   ProductMainHeading,
@@ -24,8 +23,9 @@ import {
   BackCard,
   ProductBackDescription,
 } from '../css/ProductsStyled';
-import manIcon from '../assets/manIcon.png';
-import groupIcon from '../assets/groupIcon.png';
+import { Container } from '../GlobalStyles';
+import manIcon from '../assets/man-icon.png';
+import groupIcon from '../assets/group-icon.png';
 
 const Products = ({ data }) => {
   return (

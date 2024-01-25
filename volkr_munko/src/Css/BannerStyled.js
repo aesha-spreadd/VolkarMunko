@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import banner from '../assets/banner.png';
+import theme from '../theme';
 
 export const BannerSection = styled.div`
   overflow: hidden;
@@ -26,10 +27,7 @@ export const BannerSectionInnerPart = styled.div`
   }
 `;
 
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
+export const BannerInnerData = styled.div`
   display: flex;
   justify-content: space-between;
 
@@ -52,14 +50,14 @@ export const BannerHeading = styled.div`
   position: relative;
   max-width: 565px;
   width: 100%;
-  margin: 60px 0 40px;
+  margin: 50px 0 40px;
   font-family: Quicksand-Bold;
   font-size: 54px;
   font-weight: bold;
   line-height: 79px;
   letter-spacing: -0.56px;
   text-align: left;
-  color: #14183e;
+  color: ${theme.DarkBlue};
   z-index: 1;
 
   &::after {
@@ -96,7 +94,7 @@ export const BannerDescription = styled.div`
   font-size: 18px;
   line-height: 31px;
   letter-spacing: -0.18px;
-  color: #37415c;
+  color: ${theme.LightBlue};
 
   @media (max-width: 991px) {
     font-size: 12px;
@@ -120,7 +118,7 @@ export const BannerButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: ${theme.white};
   background: radial-gradient(#767678, #3b3b3c);
   cursor: pointer;
 
@@ -162,7 +160,7 @@ export const BannerButtonHide = styled.div`
     line-height: 62px;
     letter-spacing: -0.14px;
     text-align: left;
-    color: #fff;
+    color: ${theme.white};
     background: radial-gradient(#767678, #3b3b3c);
     cursor: pointer;
 

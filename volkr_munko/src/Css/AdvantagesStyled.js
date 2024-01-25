@@ -1,18 +1,13 @@
 import styled from 'styled-components';
+import theme from '../theme';
 
 export const AdvantagesSection = styled.div`
   padding: 200px 0;
-  background: #ffffff;
+  background: ${theme.white};
 
   @media (max-width: 991px) {
     padding: 100px 0;
   }
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
 `;
 
 export const AdvantagesInnerPart = styled.div`
@@ -20,7 +15,7 @@ export const AdvantagesInnerPart = styled.div`
   justify-content: space-between;
   align-items: center;
   border-radius: 24px;
-  box-shadow: 0 8px 40px 0 #0000001a;
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.1);
   max-height: 590px;
   height: auto;
 
@@ -53,7 +48,7 @@ export const LeftImage = styled.div`
 `;
 
 export const AdvantagesContent = styled.div`
-  margin: 0 70px 0 0;
+  margin: 0 50px 0 0;
 `;
 
 export const AdvantageHeading = styled.div`
@@ -62,7 +57,7 @@ export const AdvantageHeading = styled.div`
   font-weight: bold;
   line-height: 72px;
   letter-spacing: -0.56px;
-  color: #14183e;
+  color: ${theme.DarkBlue};
   max-width: 565px;
   width: 100%;
   margin: 0 0 20px;
@@ -99,7 +94,7 @@ export const AdvantagesDescription = styled.div`
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.18px;
-  color: #3f3f40;
+  color: ${theme.PayneGrey};
   max-width: 565px;
   width: 100%;
 
@@ -135,7 +130,7 @@ export const LiNumber = styled.div`
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.18px;
-  color: #fff;
+  color: ${theme.white};
 
   @media (max-width: 991px) {
     font-size: 12px;
@@ -152,7 +147,7 @@ export const LiContent = styled.div`
   font-weight: 600;
   line-height: 34px;
   letter-spacing: -0.18px;
-  color: #37415c;
+  color: ${theme.LightBlue};
 
   @media (max-width: 991px) {
     font-size: 14px;

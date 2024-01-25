@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import theme from '../theme';
 
 export const ContactSection = styled.div`
   padding: 140px 0;
@@ -6,12 +7,6 @@ export const ContactSection = styled.div`
   @media (max-width: 991px) {
     padding: 50px 20px;
   }
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
 `;
 
 export const ContactSectionInnerPart = styled.div`
@@ -40,7 +35,6 @@ export const LeftInnerMap = styled.div`
 
   iframe {
     border-radius: 22px;
-    border-color: #f8f9fa;
 
     @media (max-width: 575px) {
       max-width: 290px;
@@ -85,7 +79,7 @@ export const ContactAreaHeading = styled.div`
   font-weight: bold;
   line-height: 34px;
   letter-spacing: -0.29px;
-  color: #000;
+  color: ${theme.black};
   position: relative;
   padding: 0 0 0 50px;
   margin: 0 0 20px 0;
@@ -98,7 +92,7 @@ export const ContactAreaHeading = styled.div`
     height: 2px;
     max-width: 22px;
     width: 100%;
-    background: #000;
+    background: ${theme.black};
   }
 
   @media (max-width: 991px) {
@@ -115,7 +109,7 @@ export const ContactAreaCompanyName = styled.div`
   font-weight: bold;
   line-height: 72px;
   letter-spacing: -0.56px;
-  color: #14183e;
+  color: ${theme.DarkBlue};
   width: 100%;
   margin: 0 0 60px;
   position: relative;
@@ -175,11 +169,11 @@ export const ContactDetailsOfIcon = styled.div`
   line-height: 35px;
   letter-spacing: -0.2px;
   text-align: left;
-  color: #37415c;
+  color: ${theme.LightBlue};
 
   a {
     text-decoration: none;
-    color: #37415c;
+    color: ${theme.LightBlue};
   }
 
   @media (max-width: 991px) {

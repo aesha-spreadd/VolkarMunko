@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import footerBg from '../assets/bg-footer.png';
+import theme from '../theme';
 
 export const FooterSection = styled.div`
   background: url(${footerBg}) no-repeat;
@@ -9,12 +10,6 @@ export const FooterSection = styled.div`
   width: 100%;
   height: auto;
   overflow: hidden;
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
 `;
 
 export const FooterSectionInnerPart = styled.div``;
@@ -47,7 +42,7 @@ export const FooterDescription = styled.div`
   font-size: 16px;
   line-height: 36px;
   letter-spacing: -0.16px;
-  color: #fff;
+  color: ${theme.white};
 
   @media (max-width: 767px) {
     height: 72px;
@@ -56,7 +51,7 @@ export const FooterDescription = styled.div`
     line-height: 16px;
     letter-spacing: -0.13px;
     text-align: center;
-    color: #fff;
+    color: ${theme.white};
   }
 `;
 

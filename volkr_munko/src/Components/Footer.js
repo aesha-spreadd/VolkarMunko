@@ -1,13 +1,13 @@
 import React from 'react';
-import VmLogo from '../assets/vmLogo.png';
+import VolkarMunko from '../assets/volkar-munko-footer.png';
 import {
   FooterSection,
-  Container,
   FooterSectionInnerPart,
   FooterSectionLogo,
   FooterDescription,
   FooterTop,
 } from '../css/FooterStyled';
+import { Container } from '../GlobalStyles';
 import FooterBottom from './FooterBottom';
 
 const Footer = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
           <Container>
             <FooterSectionInnerPart>
               <FooterSectionLogo>
-                <img src={VmLogo} alt="volkar-munko" />
+                <img src={VolkarMunko} alt="volkar-munko" />
               </FooterSectionLogo>
               <FooterDescription>
                 It is a long established fact that a reader will be distracted

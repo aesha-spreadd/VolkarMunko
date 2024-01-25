@@ -4,7 +4,6 @@ import {
   FinanceRight,
   FinanceSection,
   FinanceSectionInnerPart,
-  Container,
   FinanceHeading,
   FinanceDescription,
   FinanceButton,
@@ -17,8 +16,9 @@ import {
   FinanceImageInner,
   RightInnerImageDescription,
 } from '../css/FinanceStyled';
-import Handelsblatt from '../assets/fianceImage.jpg';
-import Exzellent from '../assets/fianceImageExzellent.jpg';
+import { Container } from '../GlobalStyles';
+import Handelsblatt from '../assets/fiance-image.jpg';
+import Exzellent from '../assets/fiance-image-exzellent.jpg';
 
 const Finance = () => {
   return (

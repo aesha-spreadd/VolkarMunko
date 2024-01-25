@@ -1,19 +1,14 @@
 import styled from 'styled-components';
+import theme from '../theme';
 
 export const FinanceSection = styled.div`
   display: block;
-  background: #fff;
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
+  background: ${theme.white};
 `;
 
 export const FinanceSectionInnerPart = styled.div`
   padding: 50px 0 100px;
-  margin: 0 0 52px 0;
+  margin: 0 0 50px 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -44,7 +39,7 @@ export const FinanceHeading = styled.div`
   letter-spacing: -0.56px;
   text-align: left;
   text-transform: uppercase;
-  color: #14183e;
+  color: ${theme.DarkBlue};
   z-index: 2;
 
   &::after {
@@ -82,7 +77,7 @@ export const FinanceDescription = styled.div`
   font-size: 18px;
   line-height: 31px;
   letter-spacing: -0.18px;
-  color: #37415c;
+  color: ${theme.LightBlue};
 
   @media (max-width: 991px) {
     width: 100%;
@@ -108,13 +103,13 @@ export const FinanceButton = styled.div`
   font-weight: 500;
   letter-spacing: -0.18px;
   text-align: left;
-  color: #000;
+  color: ${theme.black};
   cursor: pointer;
   background: radial-gradient(#fff, #e6e6e6);
 
   &:hover {
     background: radial-gradient(#767678, #3b3b3c);
-    color: #fff;
+    color: ${theme.white};
   }
 
   @media (max-width: 991px) {
@@ -152,7 +147,7 @@ export const FinanceRightHeading = styled.div`
   line-height: 44px;
   letter-spacing: -0.29px;
   text-align: left;
-  color: #14183e;
+  color: ${theme.DarkBlue};
 
   &::before {
     content: '';
@@ -180,7 +175,7 @@ export const FinanceRightHeading = styled.div`
 export const FinanceImagePortion = styled.div`
   padding: 40px;
   border-radius: 23px;
-  border: 1px solid #cfcfcf;
+  border: 1px solid ${theme.LightGrey};
 
   @media (max-width: 1199px) {
     padding: 20px;
@@ -234,7 +229,7 @@ export const RightInnerImageDescription = styled.div`
   line-height: 28px;
   letter-spacing: -0.16px;
   text-align: center;
-  color: #707684;
+  color: ${theme.SlateGrey};
 
   @media (max-width: 991px) {
     font-size: 12px;

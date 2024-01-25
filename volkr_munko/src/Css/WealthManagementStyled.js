@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import HouseProtection from '../assets/houseProtection.png';
+import HouseProtection from '../assets/house-protection.png';
 import BGWealthManagement from '../assets/bg-wealthmanagement.png';
+import theme from '../theme';
 
 export const WealthManagementSection = styled.div`
   background: url(${BGWealthManagement}) no-repeat;
@@ -16,20 +17,25 @@ export const WealthManagementSection = styled.div`
     height: 620px;
     background-size: 560px 620px;
     position: absolute;
-    right: 0;
-    top: 167px;
+    right: 4px;
+    top: 165px;
     background-position: center top;
+
+    @media (max-width: 1199px) {
+      right: 0;
+      top: 144px;
+    }
 
     @media (max-width: 991px) {
       max-width: 270px;
       width: 100%;
       height: 290px;
       background-size: 270px 290px;
-      top: 230px;
+      top: 126px;
     }
 
     @media (max-width: 575px) {
-      top: 206px;
+      top: 190px;
     }
   }
 
@@ -37,12 +43,6 @@ export const WealthManagementSection = styled.div`
     height: auto;
     max-height: 1800px;
   }
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
 `;
 
 export const WealthManagementInnerPart = styled.div`
@@ -83,7 +83,7 @@ export const WealthManagementLeftData = styled.div`
 `;
 
 export const WealthManagementRightData = styled.div`
-  height: 1116px;
+  height: 1048px;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -105,7 +105,7 @@ export const WealthManagementHeading = styled.div`
   font-weight: 500;
   line-height: 72px;
   letter-spacing: -0.51px;
-  color: #ffffff;
+  color: ${theme.white};
   max-width: 565px;
   width: 100%;
   margin: 0 0 100px;
@@ -119,7 +119,7 @@ export const WealthManagementHeading = styled.div`
     height: 5px;
     max-width: 190px;
     width: 100%;
-    background: #ffffff;
+    background: ${theme.white};
 
     @media (max-width: 991px) {
       max-width: 95px;
@@ -185,7 +185,7 @@ export const WealthManagementDescription = styled.div`
   line-height: 35px;
   letter-spacing: -0.2px;
   text-align: left;
-  color: #fff;
+  color: ${theme.white};
 
   @media (max-width: 1199px) {
     font-size: 14px;

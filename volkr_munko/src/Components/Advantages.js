@@ -2,7 +2,6 @@ import React from 'react';
 import {
   AdvantagesInnerPart,
   AdvantagesSection,
-  Container,
   AdvantageLeft,
   AdvantageRight,
   LeftImage,
@@ -14,7 +13,8 @@ import {
   LiNumber,
   LiContent,
 } from '../css/AdvantagesStyled';
-import advantageImage from '../assets/advantagesImage.png';
+import advantageImage from '../assets/advantages-image.png';
+import { Container } from '../GlobalStyles';
 
 const Advantages = ({ data }) => {
   return (

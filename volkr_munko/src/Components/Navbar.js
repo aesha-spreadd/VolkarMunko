@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   NavbarSection,
-  Container,
   NavbarLeft,
   NavbarRight,
   NavbarInner,
@@ -12,7 +11,8 @@ import {
   MobileHideButton,
   MobileOpen,
 } from '../css/NavbarStyled';
-import navbarLogo from '../assets/vmLogo_navbar.png';
+import { Container } from '../GlobalStyles';
+import navbarLogo from '../assets/volkar-munko-navbar.png';
 import { FiAlignJustify } from 'react-icons/fi';
 
 const Navbar = () => {

@@ -1,21 +1,12 @@
 import styled from 'styled-components';
+import theme from '../theme';
 
 export const FooterBottomSection = styled.div`
-  border-top: 1px solid #ffffff3b;
+  border-top: 1px solid rgba(255, 255, 255, 0.23);
   padding: 40px 0;
 
   @media (max-width: 991px) {
-    padding: 20px 0 10px;
-  }
-`;
-
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
-
-  @media (max-width: 1199px) {
-    padding: 0 20px;
+    padding: 20px 10px 10px;
   }
 `;
 
@@ -36,7 +27,7 @@ export const CopyRightText = styled.div`
   font-family: Nunito-Regular;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: ${theme.white};
 
   @media (max-width: 991px) {
     font-size: 12px;
@@ -61,7 +52,7 @@ export const RightInnerLi = styled.div`
   padding: 0 36px;
 
   &:not(:last-child) {
-    border-right: 1px solid #ffffff3b;
+    border-right: 1px solid ${theme.ZambeziGrey};
   }
 
   @media (max-width: 991px) {
@@ -73,7 +64,7 @@ export const FooterText = styled.div`
   font-family: Nunito-Regular;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: ${theme.white};
 
   @media (max-width: 991px) {
     font-size: 12px;

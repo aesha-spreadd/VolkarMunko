@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   WealthManagementSection,
-  Container,
   WealthManagementInnerPart,
   WealthManagementLeft,
   WealthManagementRight,
@@ -14,7 +13,8 @@ import {
   WealthManagementDescription,
   WealthManagementRightContent,
 } from '../css/WealthManagementStyled';
-import checkIcon from '../assets/checkIcon.png';
+import { Container } from '../GlobalStyles';
+import checkIcon from '../assets/check-icon.png';
 
 const WealthManagement = ({ data }) => {
   return (

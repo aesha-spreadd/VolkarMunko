@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import productBg from '../assets/bg-product.png';
 import productFooterBg from '../assets/bg-productfooter.png';
+import theme from '../theme';
 
 export const ProductSection = styled.div`
   background: #fbfbfb;
@@ -30,11 +31,7 @@ export const ProductSection = styled.div`
   }
 `;
 
-export const Container = styled.div`
-  width: 100%;
-  max-width: 1088px;
-  margin: 0 auto;
-
+export const ProductsInner = styled.div`
   &::after {
     content: '';
     background: url(${productFooterBg}) no-repeat;
@@ -60,8 +57,6 @@ export const Container = styled.div`
   }
 `;
 
-export const ProductsInner = styled.div``;
-
 export const ProductHeading = styled.div`
   display: flex;
   align-items: center;
@@ -75,7 +70,7 @@ export const ProductMainHeading = styled.div`
   font-weight: bold;
   line-height: 76px;
   letter-spacing: -0.17px;
-  color: #14183e;
+  color: ${theme.DarkBlue};
   margin: 0 0 30px 0;
 
   @media (max-width: 767px) {
@@ -88,7 +83,7 @@ export const ProductDescription = styled.div`
   font-size: 16px;
   line-height: 30px;
   letter-spacing: -0.17px;
-  color: #191919;
+  color: ${theme.Nero};
   text-align: center;
   margin: 0 0 40px 0;
 
@@ -102,12 +97,12 @@ export const ProductButtons = styled.div`
   max-width: 640px;
   width: 100%;
   height: 72px;
-  margin: 48px 2px 88px 124px;
+  margin: 30px 0;
   padding: 0 66px 0 0;
   border-radius: 36px;
-  box-shadow: 0 3px 6px 0 #00000008;
-  border: 1px solid #eee0e4;
-  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03);
+  border: 1px solid ${theme.AmourPink};
+  background-color: ${theme.white};
 
   @media (max-width: 1199px) {
     margin: 0;
@@ -125,9 +120,9 @@ export const PrivateCustomerButton = styled.div`
   margin: 0 60px 0 0;
   padding: 0 40px 0 72px;
   border-radius: 36px;
-  box-shadow: 0 3px 6px 0 #00000008;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03);
   z-index: 1;
-  background-color: #424244;
+  background-color: ${theme.PayneLightGrey};
 `;
 
 export const PrivateCustomerButtonText = styled.div`
@@ -141,7 +136,7 @@ export const PrivateCustomerButtonText = styled.div`
   line-height: 30px;
   letter-spacing: -0.21px;
   text-align: center;
-  color: #fff;
+  color: ${theme.white};
   z-index: 1;
 `;
 
@@ -179,7 +174,7 @@ export const GroupButtonText = styled.div`
   line-height: 30px;
   letter-spacing: -0.21px;
   text-align: center;
-  color: #14183e;
+  color: ${theme.DarkBlue};
 `;
 
 export const ProductsInnerCard = styled.div`
@@ -204,15 +199,15 @@ export const ProductInnerCardDetails = styled.div`
   padding: 10px;
   position: relative;
   border-radius: 20px;
-  border: 1px solid #e9e5e5;
-  background-color: #fff;
+  border: 1px solid ${theme.WhisperWhite};
+  background-color: ${theme.white};
   margin: 30px 0 0 -28px;
   transition: transform 0.5s;
   transform-style: preserve-3d;
 
   &:hover {
     transform: rotateY(180deg);
-    background-color: #434345;
+    background-color: ${theme.PayneDarkGrey};
     height: 450px;
   }
 
@@ -237,7 +232,7 @@ export const FrontCard = styled.div`
 export const BackCard = styled.div`
   width: 100%;
   height: 100%;
-  background-color: #434345;
+  background-color: ${theme.PayneDarkGrey};
   position: absolute;
   backface-visibility: hidden;
   display: flex;
@@ -284,7 +279,7 @@ export const ProductCardText = styled.div`
   line-height: 34px;
   letter-spacing: -0.26px;
   text-align: center;
-  color: #14183e;
+  color: ${theme.DarkBlue};
 
   @media (max-width: 767px) {
     margin: 44px 10px 46px 0;
@@ -302,8 +297,8 @@ export const ProductCardButton = styled.div`
   font-weight: bold;
   line-height: 80px;
   text-align: left;
-  color: #14183e;
-  background-color: #ebebeb;
+  color: ${theme.DarkBlue};
+  background-color: ${theme.WhisperWhite};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,7 +315,7 @@ export const ProductBackDescription = styled.div`
   line-height: 24px;
   letter-spacing: -0.14px;
   text-align: left;
-  color: #fff;
+  color: ${theme.white};
 `;
 
 export const ProductCardIButtonBackCard = styled.div`
