@@ -192,7 +192,7 @@ export const FinanceImagePortion = styled.div`
   }
 `;
 
-export const FinanceImages = styled.div`
+export const FinanceHandelsblatt = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +202,7 @@ export const FinanceImages = styled.div`
   }
 `;
 
-export const FinanceImagesTwo = styled.div`
+export const FinanceExzellent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

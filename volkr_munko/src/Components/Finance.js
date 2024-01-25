@@ -11,8 +11,8 @@ import {
   FinanceRightMainHeading,
   FinanceRightHeading,
   FinanceImagePortion,
-  FinanceImages,
-  FinanceImagesTwo,
+  FinanceHandelsblatt,
+  FinanceExzellent,
   ImageDivider,
   FinanceImageInner,
   RightInnerImageDescription,
@@ -43,13 +43,13 @@ const Finance = () => {
               </FinanceRightMainHeading>
               <FinanceImagePortion>
                 <FinanceImageInner>
-                  <FinanceImages>
+                  <FinanceHandelsblatt>
                     <img src={Handelsblatt} alt="finance" />
-                  </FinanceImages>
+                  </FinanceHandelsblatt>
                   <ImageDivider />
-                  <FinanceImagesTwo>
+                  <FinanceExzellent>
                     <img src={Exzellent} alt="finance" />
-                  </FinanceImagesTwo>
+                  </FinanceExzellent>
                 </FinanceImageInner>
                 <RightInnerImageDescription>
                   We are regularly recognized by independent institutes for our
