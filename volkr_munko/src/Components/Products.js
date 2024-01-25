@@ -64,7 +64,7 @@ const Products = ({ data }) => {
                   <ProductInnerCardDetails key={index}>
                     <FrontCard>
                       <ProductCardIButton>
-                        <img src={card.ibuttonSrc} alt="ibutton" />
+                        <img src={card.ibuttonSrc} alt="moreinfo" />
                       </ProductCardIButton>
                       <ProductCardIcon>
                         <img src={card.iconSrc} alt="checkmark" />
@@ -74,7 +74,7 @@ const Products = ({ data }) => {
                     </FrontCard>
                     <BackCard>
                       <ProductCardIButtonBackCard>
-                        <img src={card.ibuttonSrc} alt="ibutton" />
+                        <img src={card.ibuttonSrc} alt="moreinfo" />
                       </ProductCardIButtonBackCard>
                       <ProductBackDescription>
                         It is a long established fact that a reader will be

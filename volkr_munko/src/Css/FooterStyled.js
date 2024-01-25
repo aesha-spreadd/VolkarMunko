@@ -36,7 +36,6 @@ export const FooterSectionLogo = styled.div`
 export const FooterDescription = styled.div`
   max-height: 57px;
   height: auto;
-  margin: 0 100px;
   text-align: center;
   font-family: Nunito-Regular;
   font-size: 16px;
@@ -56,5 +55,5 @@ export const FooterDescription = styled.div`
 `;
 
 export const FooterTop = styled.div`
-  padding: 90px 0;
+  padding: 90px 0 50px;
 `;

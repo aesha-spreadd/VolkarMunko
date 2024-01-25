@@ -3,7 +3,7 @@ import theme from '../theme';
 
 export const FooterBottomSection = styled.div`
   border-top: 1px solid rgba(255, 255, 255, 0.23);
-  padding: 40px 0;
+  padding: 40px 10px;
 
   @media (max-width: 991px) {
     padding: 20px 10px 10px;
