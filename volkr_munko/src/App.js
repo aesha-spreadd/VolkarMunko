@@ -8,11 +8,13 @@ import WealthManagement from './Components/WealthManagement';
 import Products from './Components/Products';
 import { cardData, advantagesList, wealthManagementData } from './cardsData';
 import { GlobalStyles } from './GlobalStyles';
+import Navbar from './Components/Navbar';
 
 const App = () => {
   return (
     <div>
       <GlobalStyles />
+      <Navbar />
       <Banner />
       <Finance />
       <Products data={cardData} />

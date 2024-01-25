@@ -11,9 +11,9 @@ import theme from './theme';
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    margin: 4px;
+    margin:0;
     padding: 0;
-    background: ${theme.white};
+    background: linear-gradient(180deg, #f8f8f8, #fff);
     overflow-x: hidden;
   }
     @font-face {

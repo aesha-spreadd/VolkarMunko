@@ -23,7 +23,7 @@ const Navbar = () => {
           <NavbarInner>
             <NavbarLeft>
               <LeftLogo>
-                <img src={navbarLogo} alt="volkarmunko-logo" />
+                <img src={navbarLogo} alt="volkarmunko" />
               </LeftLogo>
             </NavbarLeft>
             <NavbarRight>

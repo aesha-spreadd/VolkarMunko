@@ -2,10 +2,7 @@ import styled from 'styled-components';
 import theme from '../theme';
 
 export const NavbarSection = styled.div`
-  padding: 30px 0 0;
-  position: absolute;
   top: 0;
-  max-width: 90%;
   width: 100%;
   z-index: 1;
 

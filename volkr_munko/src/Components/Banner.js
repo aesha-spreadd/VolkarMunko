@@ -19,7 +19,6 @@ import { Container } from '../GlobalStyles';
 const Banner = () => {
   return (
     <div>
-      <Navbar />
       <BannerSection>
         <BannerSectionInnerPart>
           <Container>

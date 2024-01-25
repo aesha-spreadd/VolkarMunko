@@ -4,14 +4,12 @@ import theme from '../theme';
 
 export const BannerSection = styled.div`
   overflow: hidden;
-  margin: 20px;
+  margin: 14px;
   position: relative;
-  padding: 124px 0 30px;
   background: linear-gradient(180deg, #f8f8f8, #fff);
 
   @media (max-width: 991px) {
     margin: 10px;
-    padding: 50px 0 50px;
   }
 `;
 
@@ -81,7 +79,7 @@ export const BannerHeading = styled.div`
   @media (max-width: 991px) {
     font-size: 24px;
     line-height: 79px;
-    margin: 40px 0 0 0;
+    margin: 0;
     height: auto;
   }
 `;
